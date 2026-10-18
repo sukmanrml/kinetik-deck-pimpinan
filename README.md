@@ -20,7 +20,7 @@ Ekspor memerlukan browser Playwright. Bila belum ada: `pnpm exec playwright inst
 
 ## Catatan
 
-- Catatan penyaji (Bahasa Indonesia) ada di komentar HTML di akhir setiap slide pada `slides.md`.
+- Catatan penyaji (Bahasa Indonesia) ada di komentar HTML di akhir setiap berkas slide di `pages/`. `slides.md` hanya berisi pengaturan deck dan daftar berkas.
 - Slide beranimasi: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15 (klik). Animasi pemindahan pekerjaan ada di slide 6.
 - `pnpm-workspace.yaml` menyematkan `markdown-it` ^14 karena Slidev 52 gagal dibangun dengan versi 15.
 - Angka dan fakta berasal dari ringkasan status Kinetik per Oktober 2026. Butir yang belum dikerjakan ditandai "rencana".
