@@ -1,5 +1,5 @@
 export interface ShotStep { n: number; x: number; y: number; text: string }
-export interface ShotDef { src: string; steps: ShotStep[] }
+export interface ShotDef { src: string; url?: string; steps: ShotStep[] }
 
 export const shots: Record<string, ShotDef> = {
     "member-weeks": {
@@ -524,6 +524,15 @@ export const shots: Record<string, ShotDef> = {
                 "y": 22.6,
                 "text": "Tambah: pintu masuk untuk menambah kegiatan atau rencana."
             }
+        ]
+    },
+    "devtools": {
+        "src": "/shots/devtools.png",
+        "url": "kipapp.bps.go.id (DevTools, tab Network)",
+        "steps": [
+            {"n": 1, "x": 84, "y": 31, "text": "Tab Network di DevTools: semua file yang di-download browser saat kipApp dibuka."},
+            {"n": 2, "x": 84, "y": 40, "text": "File bertipe script (sc...) ini potongan bundle JavaScript, isi aplikasi yang sebenarnya."},
+            {"n": 3, "x": 84, "y": 97, "text": "69 request dan 4,2 MB hanya untuk membuka halaman login."}
         ]
     }
 };

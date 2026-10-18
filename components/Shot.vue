@@ -38,7 +38,7 @@ const zoomStyle = computed(() => {
 <template>
     <div class="shot">
         <div class="frame">
-            <div class="bar"><i></i><i></i><i></i><span>kinetik.bpssulteng.id</span></div>
+            <div class="bar"><i></i><i></i><i></i><span>{{ shot.url ?? 'kinetik.bpssulteng.id' }}</span></div>
             <div class="img">
                 <div class="zoomer" :style="zoomStyle">
                     <img :src="shot.src" alt="" />
