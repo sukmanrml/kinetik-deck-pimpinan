@@ -1,6 +1,6 @@
 # Kinetik: paparan untuk pimpinan
 
-Deck Slidev (Bahasa Indonesia, 16:9, 37 slide) tentang Kinetik untuk Kepala BPS Provinsi Sulawesi Tengah.
+Deck Slidev (Bahasa Indonesia, 16:9, 46 slide) tentang Kinetik (Kinerja Statistik Terintegrasi) untuk Kepala BPS Provinsi Sulawesi Tengah.
 
 Penyaji: Sukma Nirmala Dewi, S.Tr.Stat.
 Pranata Komputer Ahli Pertama, Tim Metodologi dan Teknologi Informasi (MTI), BPS Provinsi Sulawesi Tengah.

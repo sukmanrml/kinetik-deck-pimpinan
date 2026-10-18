@@ -4,3 +4,4 @@ exports
 *.pdf
 .DS_Store
 .tmp
+out

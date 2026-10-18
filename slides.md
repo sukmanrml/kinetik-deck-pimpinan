@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Kinetik - Monitoring Kinerja Tim
+title: Kinetik (Kinerja Statistik Terintegrasi)
 info: Paparan untuk Kepala BPS Provinsi Sulawesi Tengah
 colorSchema: light
 duration: 20min
@@ -19,6 +19,8 @@ class: cover-blue
 
 # Kinetik
 
+<p style="font-size:1.2rem;margin:-.4rem 0 0;opacity:.9;letter-spacing:.02em">Kinerja Statistik Terintegrasi</p>
+
 <p style="font-size:1.6rem;margin-top:1.2rem;max-width:36rem">Satu tempat untuk mencatat dan memantau kinerja tim setiap minggu.</p>
 
 <p style="opacity:.8;margin-top:2rem">Paparan untuk Pimpinan · BPS Provinsi Sulawesi Tengah · Oktober 2026</p>
@@ -28,7 +30,7 @@ class: cover-blue
 <!--
 Selamat pagi, Bapak dan Ibu pimpinan. Terima kasih sudah menyediakan waktu.
 Nama saya Sukma Nirmala Dewi, dari Tim Metodologi dan Teknologi Informasi.
-Hari ini saya akan menceritakan satu aplikasi yang kami bangun, namanya Kinetik. Tujuannya sederhana: membuat kinerja tim terlihat setiap minggu, tanpa menggantikan kipApp.
+Hari ini saya akan menceritakan satu aplikasi yang kami bangun, namanya Kinetik. Kinetik singkatan dari Kinerja Statistik Terintegrasi. Tujuannya sederhana: membuat kinerja tim terlihat setiap minggu, tanpa menggantikan kipApp.
 Saya mulai dari masalahnya, lalu cara kerja yang baru, apa yang belum ada di kipApp, tantangan yang kami hadapi, dan di akhir tiga hal yang kami minta dari Bapak dan Ibu. Kira-kira dua puluh menit.
 -->
 
@@ -326,14 +328,32 @@ Ini alur baru yang kami minta dari setiap tim. Setiap Senin pagi, ada satu ritua
 
 ---
 
-# Anggota (1/2): Rekap Mingguan
+# Anggota (1/6): pilih bulan
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span>
+
+<Shot id="member-months" :clicks="$clicks" />
+
+<!--
+Alur anggota mulai dari sini: Rekap Mingguan, dan yang pertama tampil adalah daftar bulan. Data nyata satu anggota.
+[click] Pertama, pilih tahunnya.
+[click] Kedua, kolom Kegiatan menunjukkan jumlah kegiatan anggota itu di tiap bulan.
+[click] Ketiga, Capaian terisi menunjukkan berapa kegiatan yang sudah diisi capaiannya.
+[click] Keempat, Terkirim ke atasan menunjukkan berapa kegiatan yang sudah dikirim.
+[click] Kelima, status bulan itu. Belum ditulis artinya masih ada capaian yang belum diisi.
+[click] Keenam, bulan yang sedang berjalan ditandai Sekarang. Klik satu bulan untuk lanjut ke daftar minggunya.
+-->
+
+---
+
+# Anggota (2/6): pilih minggu
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 
 <Shot id="member-weeks" :clicks="$clicks" />
 
 <!--
-Kita mulai dari sisi anggota. Ini halaman Rekap Mingguan milik satu anggota, dengan data nyata dari kipApp.
+Setelah memilih bulan, anggota melihat daftar minggunya. Ini bulan September 2026, data nyata.
 [click] Pertama, anggota memilih bulan, lalu minggunya. Tampilannya daftar dulu, jadi tidak perlu membuka banyak lembar.
 [click] Kedua, kolom Kegiatan dan Capaian terisi menunjukkan berapa kegiatan minggu itu, dan berapa yang sudah ada capaiannya.
 [click] Ketiga, kolom Terkirim ke atasan menunjukkan berapa kegiatan yang sudah dikirim ke kipApp.
@@ -342,7 +362,24 @@ Kita mulai dari sisi anggota. Ini halaman Rekap Mingguan milik satu anggota, den
 
 ---
 
-# Anggota (2/2): tambah kegiatan atau rencana
+# Anggota (3/6): detail minggu
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span>
+
+<Shot id="member-week-detail" :clicks="$clicks" />
+
+<!--
+Setelah memilih minggu, anggota masuk ke halaman detail minggu. Di sinilah semua pekerjaan anggota dilakukan.
+[click] Pertama, tabel Capaian minggu lalu. Ini bahan evaluasi untuk Senin pagi, tanpa pindah halaman.
+[click] Kedua, tabel Rencana minggu ini, berisi kegiatan yang direncanakan dan yang sudah berjalan.
+[click] Ketiga, kolom cari, untuk mencari kegiatan atau RK.
+[click] Keempat, tombol Sinkronkan data saya, untuk mengambil kegiatan terbaru dari kipApp.
+[click] Kelima, tombol Tambah. Ini pintu masuk untuk menambah kegiatan atau rencana, dan formnya ada di slide berikutnya.
+-->
+
+---
+
+# Anggota (4/6): tambah kegiatan atau rencana
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span>
 
@@ -360,7 +397,74 @@ Ini form untuk menambah kegiatan atau rencana. Bentuknya sengaja dibuat mirip fo
 
 ---
 
-# PJ (1/2): rekap minggu tim
+# Anggota (5/6): setelah kegiatan ditambah
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="member-unsent-week" :clicks="$clicks" />
+
+<!--
+Setelah disimpan, kegiatan langsung muncul di halaman minggu itu. Ini halaman minggu 28 September sampai 4 Oktober, data nyata.
+[click] Pertama, kegiatan yang baru ditambah langsung muncul di tabel Rencana minggu ini.
+[click] Kedua, tiap baris menunjukkan RK dan tanggalnya, jadi mudah dicek.
+[click] Ketiga, status tiap kegiatan. Contohnya Selesai, belum dikirim, artinya progresnya sudah penuh tapi belum dikirim ke atasan.
+[click] Keempat, klik barisnya untuk membuka detail dan mengisi capaian. Itu slide berikutnya.
+-->
+
+---
+
+# Anggota (6/6): isi capaian
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span><span v-click="7"></span>
+
+<Shot id="member-capaian" :clicks="$clicks" />
+
+<!--
+Ini detail satu kegiatan. Di sinilah anggota mengisi capaian dan memperbarui progres.
+[click] Pertama, di bagian atas ada detail kegiatan: tanggal, target, progres, dan statusnya.
+[click] Kedua, capaian diisi berupa angka, supaya bisa dijumlahkan di rekap.
+[click] Ketiga, progres dalam persen. Diperbarui sampai seratus kalau kegiatannya selesai.
+[click] Keempat, uraian capaian. Teks ini yang ikut dikirim ke kipApp.
+[click] Kelima, bukti dukung berupa link.
+[click] Keenam, Salin kegiatan, untuk memakai kegiatan ini sebagai dasar kegiatan baru.
+[click] Ketujuh, simpan capaian. Setelah itu kegiatan siap dikirim ke atasan.
+-->
+
+---
+
+# PJ (1/5): pilih bulan
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="pj-months" :clicks="$clicks" />
+
+<!--
+Sisi PJ juga mulai dari daftar bulan, sama seperti anggota. Ini halaman Rekap Tim untuk tim MTI, data nyata.
+[click] Pertama, PJ memilih tim yang ia pimpin.
+[click] Kedua, kolom Kegiatan menunjukkan jumlah kegiatan seluruh anggota tim di tiap bulan.
+[click] Ketiga, RK sudah ditulis dan Terkunci menunjukkan sejauh mana rekap bulan itu sudah dikerjakan.
+[click] Keempat, status tiap bulan. Belum ditulis artinya parafrase belum ada. Klik satu bulan untuk lanjut ke daftar minggunya.
+-->
+
+---
+
+# PJ (2/5): pilih minggu
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="pj-weeks" :clicks="$clicks" />
+
+<!--
+Setelah memilih bulan, PJ melihat daftar minggunya. Ini bulan Juni 2026.
+[click] Pertama, tombol kembali ke daftar semua bulan.
+[click] Kedua, satu baris untuk satu minggu. Klik satu baris untuk membuka rekap minggu itu.
+[click] Ketiga, berapa RK yang sudah ditulis parafrasenya, dan berapa yang sudah terkunci.
+[click] Keempat, status minggu itu.
+-->
+
+---
+
+# PJ (3/5): rekap minggu tim
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 
@@ -376,14 +480,32 @@ Sekarang sisi PJ. Ini rekap satu minggu untuk satu tim, dengan data nyata tim MT
 
 ---
 
-# PJ (2/2): parafrase dan kunci
+# PJ (4/5): dari mana parafrase diisi
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span>
+
+<Shot id="pj-panel" :clicks="$clicks" />
+
+<!--
+Ini bagian bawah halaman minggu tim. Di sinilah pintu masuk untuk menulis parafrase.
+[click] Pertama, Kelengkapan anggota. Di sini PJ melihat berapa anggota yang sudah mengisi capaian kegiatannya.
+[click] Kedua, label Belum mengisi menunjukkan siapa yang masih perlu diingatkan, tanpa PJ harus bertanya satu per satu.
+[click] Ketiga, PJ memilih satu RK. Parafrase ditulis per RK, bukan per orang.
+[click] Keempat, ini pintu masuknya: tombol Isi parafrase. Kalau parafrasenya sudah ada, tombol ini berubah jadi Ubah parafrase.
+[click] Kelima, di sebelah kanan ada Target RK, Capaian RK, dan status kunci rekap.
+[click] Keenam, Bukti Dukung Rapat, untuk menambah bukti rapat minggu ini.
+-->
+
+---
+
+# PJ (5/5): popup parafrase dan kunci
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 
 <Shot id="pj-paraphrase" :clicks="$clicks" />
 
 <!--
-Ini popup parafrase. PJ menulis satu parafrase untuk satu RK, dengan target dan capaian berupa angka.
+Menekan tombol Isi parafrase tadi membuka popup ini. PJ menulis satu parafrase untuk satu RK, dengan target dan capaian berupa angka.
 [click] Pertama, di kiri ada kontribusi tiap anggota. PJ membaca, lalu bisa mengambil kalimatnya.
 [click] Kedua, di kanan PJ menulis parafrase sendiri. Tidak ada isi otomatis, karena ini memang butuh penilaian PJ.
 [click] Ketiga, target, satuan, dan capaian untuk RK itu, berupa angka.
@@ -589,7 +711,7 @@ Pertanyaan yang sering muncul: dari mana kami tahu endpoint API kipApp, kalau ti
 
 <SyncFlow mode="manual" :clicks="$clicks" />
 
-<div v-click="7" class="card warn" style="margin-top:.7rem;font-size:.9rem"><b>Kelemahannya:</b> bergantung pada satu orang, dan sync berhenti begitu token habis.</div>
+<div v-click="7" class="card warn" style="margin-top:.7rem;font-size:.9rem"><b>Kelemahannya:</b> bergantung pada satu orang, dan sync berhenti begitu token expired.</div>
 
 <!--
 Tantangan pertama: kipApp tidak membuka pintu resmi bagi sistem lain. Gambar ini menunjukkan cara pertama kami. Oranye berarti dikerjakan manual, biru berarti dikerjakan sistem.
@@ -599,7 +721,7 @@ Tantangan pertama: kipApp tidak membuka pintu resmi bagi sistem lain. Gambar ini
 [click] Barulah Kinetik bisa meminta data ke kipApp memakai token tersebut. Bagian ini otomatis.
 [click] Data kegiatan masuk ke Kinetik.
 [click] Tetapi token itu hanya berlaku dua puluh empat jam. Besok admin harus mengulang dari awal.
-[click] Kelemahannya jelas: bergantung pada satu orang, dan sync berhenti begitu token habis.
+[click] Kelemahannya jelas: bergantung pada satu orang, dan sync berhenti begitu token expired.
 -->
 
 ---
@@ -619,8 +741,61 @@ Karena itu kami mencari cara lain, dan inilah cara akhir yang kami pilih. Kami m
 [click] SSO mengesahkan, dan kipApp memberikan token.
 [click] Token tersimpan terenkripsi di Kinetik.
 [click] Kinetik mengambil data seluruh pegawai dari kipApp.
-[click] Saat token habis, Kinetik login ulang sendiri memakai password yang tersimpan. Tidak ada yang perlu copy apa pun.
+[click] Saat token expired, Kinetik login ulang sendiri memakai password yang tersimpan. Tidak ada yang perlu copy apa pun.
 [click] Hasilnya, tidak ada copy-paste token. Password disimpan terenkripsi dan tidak pernah ditampilkan lagi. Dan saat admin kipApp login, token bersama untuk seluruh satuan kerja ikut diperbarui.
+-->
+
+---
+
+# Kenapa bisa login tanpa browser?
+
+<div class="grid2 compact" style="margin-top:.5rem;gap:.6rem">
+<div>
+<p class="small" style="margin:0 0 .2rem"><b>SSO sekarang hanya butuh 4 hal biasa:</b></p>
+<div v-click="1" class="card"><b>1. Halaman login = HTML.</b> Ada form di dalamnya, diambil dengan satu HTTP GET.</div>
+<div v-click="2" class="card"><b>2. Cookie sesi.</b> Kinetik menyimpannya, seperti browser.</div>
+<div v-click="3" class="card"><b>3. Kirim form.</b> Username dan password lewat HTTP POST.</div>
+<div v-click="4" class="card"><b>4. Ikuti redirect.</b> Token ada di alamat tujuan terakhir.</div>
+</div>
+<div>
+<div v-click="5" class="card ok"><b>Tidak dibutuhkan SSO sekarang</b><br><span class="small">JavaScript, captcha, passkey, perangkat khusus.</span></div>
+<div v-click="6" class="card"><b>Browser tidak ajaib.</b><br><span class="small">Ia HTTP client yang juga menampilkan halaman dan menjalankan JavaScript. Kalau SSO tidak menuntutnya, HTTP client biasa cukup. Kinetik pakai HTTP client bawaan Laravel, bukan Selenium atau Playwright.</span></div>
+<div v-click="7" class="card warn"><b>SSO baru berbeda</b><br><span class="small">Captcha butuh browser asli yang menjalankan JavaScript, passkey terikat ke perangkat. HTTP client tidak bisa keduanya.</span></div>
+</div>
+</div>
+
+<!--
+Pertanyaan wajar: bagaimana Kinetik bisa login ke SSO tanpa membuka browser, dan kenapa itu bisa?
+Jawabannya: login SSO yang sekarang itu sebenarnya sederhana. Hanya empat hal biasa.
+[click] Pertama, halaman login berupa HTML biasa yang berisi sebuah form. Cukup satu request HTTP GET untuk mengambilnya.
+[click] Kedua, cookie sesi. Kinetik menyimpannya, sama seperti yang dilakukan browser.
+[click] Ketiga, kirim form. Username dan password dikirim lewat HTTP POST ke alamat form tadi.
+[click] Keempat, ikuti redirect. Token ada di alamat tujuan terakhir, tanpa perlu menjalankan JavaScript.
+[click] Jadi yang tidak dibutuhkan SSO yang sekarang adalah JavaScript, captcha, passkey, atau perangkat khusus.
+[click] Browser sebenarnya tidak melakukan hal ajaib. Ia hanya HTTP client yang juga menampilkan halaman dan menjalankan JavaScript. Kalau SSO tidak menuntut dua hal terakhir itu, HTTP client biasa sudah cukup. Kinetik memakai HTTP client bawaan Laravel, bukan Selenium atau Playwright.
+[click] SSO baru berbeda. Captcha harus diselesaikan browser asli yang menjalankan JavaScript, dan passkey terikat ke perangkat. HTTP client tidak bisa melakukan keduanya, dan itu sebabnya cara ini akan berhenti.
+-->
+
+---
+
+# Di balik layar: login SSO versi sekarang
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span><span v-click="7"></span><span v-click="8"></span><span v-click="9"></span><span v-click="10"></span>
+
+<SsoLoginFlow :clicks="$clicks" />
+
+<!--
+Ini gambaran di balik layar: bagaimana Kinetik bisa login ke kipApp lewat SSO versi sekarang, tanpa membuka browser. Ini sequence diagram. Empat pihak: pegawai, Kinetik, kipApp, dan SSO BPS.
+[click] Pertama, pegawai mengisi username dan password SSO di Kinetik, cukup satu kali. Ini satu-satunya langkah manual.
+[click] Kedua, Kinetik membuka halaman login kipApp.
+[click] Ketiga, kipApp mengarahkan atau redirect ke SSO.
+[click] Keempat, SSO mengirim halaman login. Kinetik membaca halaman itu dan mengambil alamat form-nya.
+[click] Kelima, Kinetik mengirim username dan password ke form tersebut. Perhatikan panah merah ini. Di langkah inilah SSO yang sekarang masih bisa dilewati secara otomatis.
+[click] Keenam, kalau benar, SSO membalas dengan redirect yang membawa kode login. Kalau akun memakai OTP, SSO minta kode dulu dan Kinetik meneruskannya. Kalau password salah, SSO menolak.
+[click] Ketujuh, Kinetik membuka callback kipApp dengan kode itu.
+[click] Kedelapan, kipApp membalas dengan redirect yang membawa token. Token itu berlaku dua puluh empat jam.
+[click] Kesembilan, Kinetik menyimpan token terenkripsi. Kalau token expired, Kinetik login ulang sendiri memakai password yang tersimpan.
+[click] Dan ini alasan kekhawatiran kami. SSO baru memasang captcha dan passkey tepat di langkah kelima. Server tidak bisa melewatinya, jadi cara ini berhenti.
 -->
 
 ---

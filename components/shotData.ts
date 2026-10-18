@@ -274,5 +274,256 @@ export const shots: Record<string, ShotDef> = {
                 "text": "Ketua tim ditandai. Klik satu orang untuk melihat semua tim tempat ia berada."
             }
         ]
+    },
+    "member-unsent-week": {
+        "src": "/shots/member-unsent-week.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 17.6,
+                "y": 49.7,
+                "text": "Kegiatan baru langsung muncul di tabel Rencana minggu ini."
+            },
+            {
+                "n": 2,
+                "x": 41,
+                "y": 54.4,
+                "text": "Tiap baris menunjukkan RK dan tanggalnya, jadi mudah dicek."
+            },
+            {
+                "n": 3,
+                "x": 86.5,
+                "y": 66.9,
+                "text": "Status tiap kegiatan, misalnya Selesai, belum dikirim."
+            },
+            {
+                "n": 4,
+                "x": 17,
+                "y": 66.9,
+                "text": "Klik barisnya untuk mengisi capaian."
+            }
+        ]
+    },
+    "member-capaian": {
+        "src": "/shots/member-capaian.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 34.2,
+                "y": 29.7,
+                "text": "Detail kegiatan: tanggal, target, progres, dan status."
+            },
+            {
+                "n": 2,
+                "x": 34.2,
+                "y": 49.2,
+                "text": "Capaian berupa angka, supaya bisa dijumlahkan."
+            },
+            {
+                "n": 3,
+                "x": 49,
+                "y": 49.2,
+                "text": "Progres (%) diperbarui sampai 100."
+            },
+            {
+                "n": 4,
+                "x": 34.2,
+                "y": 57.4,
+                "text": "Uraian capaian: teks yang ikut dikirim ke kipApp."
+            },
+            {
+                "n": 5,
+                "x": 34.2,
+                "y": 68.1,
+                "text": "Bukti dukung berupa link."
+            },
+            {
+                "n": 6,
+                "x": 47,
+                "y": 78.2,
+                "text": "Copy kegiatan: pakai kegiatan ini sebagai dasar kegiatan baru."
+            },
+            {
+                "n": 7,
+                "x": 54.9,
+                "y": 78.2,
+                "text": "Simpan capaian."
+            }
+        ]
+    },
+    "pj-months": {
+        "src": "/shots/pj-weekly.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 17.2,
+                "y": 18.5,
+                "text": "Pilih tim yang dipimpin."
+            },
+            {
+                "n": 2,
+                "x": 38.4,
+                "y": 26.2,
+                "text": "Jumlah kegiatan tim di tiap bulan."
+            },
+            {
+                "n": 3,
+                "x": 49,
+                "y": 26.2,
+                "text": "RK sudah ditulis dan Terkunci: sejauh mana rekap sudah dikerjakan."
+            },
+            {
+                "n": 4,
+                "x": 77,
+                "y": 30.7,
+                "text": "Status bulan, misalnya Belum ditulis. Klik satu bulan untuk lanjut."
+            }
+        ]
+    },
+    "pj-weeks": {
+        "src": "/shots/pj-weeks.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 42.3,
+                "y": 18.4,
+                "text": "Tombol kembali ke Semua bulan."
+            },
+            {
+                "n": 2,
+                "x": 16.6,
+                "y": 30.3,
+                "text": "Satu baris satu minggu. Klik untuk membuka rekapnya."
+            },
+            {
+                "n": 3,
+                "x": 52.2,
+                "y": 26,
+                "text": "Berapa RK yang sudah ditulis parafrasenya, dan berapa yang terkunci."
+            },
+            {
+                "n": 4,
+                "x": 82.2,
+                "y": 30.4,
+                "text": "Status minggu."
+            }
+        ]
+    },
+    "pj-panel": {
+        "src": "/shots/pj-panel.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 17.2,
+                "y": 23.1,
+                "text": "Kelengkapan anggota: berapa anggota yang sudah mengisi capaian."
+            },
+            {
+                "n": 2,
+                "x": 36.8,
+                "y": 30.4,
+                "text": "Belum mengisi: siapa yang masih perlu diingatkan."
+            },
+            {
+                "n": 3,
+                "x": 25.5,
+                "y": 50.7,
+                "text": "Pilih satu RK. Parafrase ditulis per RK."
+            },
+            {
+                "n": 4,
+                "x": 89.5,
+                "y": 57.9,
+                "text": "Tombol Isi parafrase. Kalau sudah ada isinya, tombolnya jadi Ubah parafrase."
+            },
+            {
+                "n": 5,
+                "x": 84.5,
+                "y": 63.9,
+                "text": "Target RK, Capaian RK, dan status kunci."
+            },
+            {
+                "n": 6,
+                "x": 16.3,
+                "y": 84.4,
+                "text": "Bukti Dukung Rapat: tambah bukti untuk minggu ini."
+            }
+        ]
+    },
+    "member-months": {
+        "src": "/shots/member-months.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 17.3,
+                "y": 18.6,
+                "text": "Pilih tahun."
+            },
+            {
+                "n": 2,
+                "x": 36.7,
+                "y": 26.2,
+                "text": "Kegiatan: jumlah kegiatan anggota di tiap bulan."
+            },
+            {
+                "n": 3,
+                "x": 46.6,
+                "y": 26.2,
+                "text": "Capaian terisi: berapa kegiatan yang sudah ada capaiannya."
+            },
+            {
+                "n": 4,
+                "x": 60.7,
+                "y": 26.2,
+                "text": "Terkirim ke atasan: berapa kegiatan yang sudah dikirim."
+            },
+            {
+                "n": 5,
+                "x": 78.8,
+                "y": 30.6,
+                "text": "Status bulan, misalnya Belum ditulis."
+            },
+            {
+                "n": 6,
+                "x": 16.8,
+                "y": 67.6,
+                "text": "Bulan yang sedang berjalan ditandai Sekarang. Klik untuk lanjut ke minggunya."
+            }
+        ]
+    },
+    "member-week-detail": {
+        "src": "/shots/member-week-detail.png",
+        "steps": [
+            {
+                "n": 1,
+                "x": 17.4,
+                "y": 29.1,
+                "text": "Capaian minggu lalu: bahan evaluasi untuk Senin pagi."
+            },
+            {
+                "n": 2,
+                "x": 17.4,
+                "y": 45.6,
+                "text": "Rencana minggu ini: kegiatan yang direncanakan dan sudah berjalan."
+            },
+            {
+                "n": 3,
+                "x": 17.6,
+                "y": 22.6,
+                "text": "Cari kegiatan atau RK."
+            },
+            {
+                "n": 4,
+                "x": 37.2,
+                "y": 22.6,
+                "text": "Sinkronkan data saya: ambil kegiatan terbaru dari kipApp."
+            },
+            {
+                "n": 5,
+                "x": 90.7,
+                "y": 22.6,
+                "text": "Tambah: pintu masuk untuk menambah kegiatan atau rencana."
+            }
+        ]
     }
 };
