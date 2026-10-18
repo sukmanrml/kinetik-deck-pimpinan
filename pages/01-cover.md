@@ -14,5 +14,5 @@
 Selamat pagi, Bapak dan Ibu pimpinan. Terima kasih sudah menyediakan waktu.
 Nama saya Sukma Nirmala Dewi, dari Tim Metodologi dan Teknologi Informasi.
 Hari ini saya akan menceritakan satu aplikasi yang kami bangun, namanya Kinetik. Kinetik singkatan dari Kinerja Statistik Terintegrasi. Tujuannya sederhana: membuat kinerja tim terlihat setiap minggu, tanpa menggantikan kipApp.
-Saya mulai dari masalahnya, lalu cara kerja yang baru, apa yang belum ada di kipApp, tantangan yang kami hadapi, dan di akhir tiga hal yang kami minta dari Bapak dan Ibu. Kira-kira dua puluh menit.
+Saya mulai dari masalahnya, lalu cara kerja yang baru, apa yang belum ada di kipApp, tantangan yang kami hadapi, dan di akhir tiga poin tindak lanjut yang kami minta dari Bapak dan Ibu. Kira-kira dua puluh menit.
 -->

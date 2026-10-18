@@ -121,6 +121,14 @@ src: ./pages/27-semua-peran-struktur-organisasi.md
 ---
 
 ---
+src: ./pages/27a-jadwal-otomatis-scheduler.md
+---
+
+---
+src: ./pages/27b-notifikasi-di-aplikasi.md
+---
+
+---
 src: ./pages/28-yang-sudah-dikerjakan-kipapp.md
 ---
 
