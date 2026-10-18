@@ -309,6 +309,169 @@ Slide ini merangkum SOP tadi dalam satu gambar. Setiap kotak adalah satu langkah
 
 ---
 
+# Ritual baru: tiap Senin pagi
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span>
+
+<MondayRitual :clicks="$clicks" />
+
+<!--
+Ini alur baru yang kami minta dari setiap tim. Setiap Senin pagi, ada satu ritual yang sama: mengevaluasi minggu lalu, dan merencanakan minggu ini.
+[click] Pertama, Senin pagi, evaluasi minggu lalu. Anggota mengisi capaian dan bukti. PJ menulis parafrase per RK, lalu mengunci rekap.
+[click] Kedua, masih Senin pagi, sebelum pukul sembilan: setiap anggota mengisi rencana kegiatan minggu ini di Rekap Mingguan.
+[click] Ketiga, Selasa sampai Minggu, anggota bekerja dan mencatat sekali, di kipApp atau Kinetik. Auto sync, tidak ada copy-paste.
+[click] Keempat, setelah pukul sembilan, pimpinan membuka Kepatuhan Rencana dan panel Perlu perhatian, untuk melihat siapa yang belum punya rencana.
+[click] Lalu Senin berikutnya, siklusnya mulai lagi dari evaluasi minggu yang baru selesai. Slide-slide berikut adalah walkthrough tampilannya.
+-->
+
+---
+
+# Anggota (1/2): Rekap Mingguan
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="member-weeks" :clicks="$clicks" />
+
+<!--
+Kita mulai dari sisi anggota. Ini halaman Rekap Mingguan milik satu anggota, dengan data nyata dari kipApp.
+[click] Pertama, anggota memilih bulan, lalu minggunya. Tampilannya daftar dulu, jadi tidak perlu membuka banyak lembar.
+[click] Kedua, kolom Kegiatan dan Capaian terisi menunjukkan berapa kegiatan minggu itu, dan berapa yang sudah ada capaiannya.
+[click] Ketiga, kolom Terkirim ke atasan menunjukkan berapa kegiatan yang sudah dikirim ke kipApp.
+[click] Keempat, status minggu. Belum ditulis artinya masih ada kegiatan yang belum diberi capaian.
+-->
+
+---
+
+# Anggota (2/2): tambah kegiatan atau rencana
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span>
+
+<Shot id="member-add" :clicks="$clicks" />
+
+<!--
+Ini form untuk menambah kegiatan atau rencana. Bentuknya sengaja dibuat mirip form kipApp, supaya anggota tidak perlu belajar ulang.
+[click] Pertama, anggota memilih RK dari daftar RK miliknya.
+[click] Kedua, menulis kegiatan, atau mengambilnya dari List Aktivitas.
+[click] Ketiga, ini yang penting: tanggal ke depan boleh diisi. Di form kipApp, ini ditolak, jadi di sinilah perencanaan jadi mungkin.
+[click] Keempat, target, satuan, dan capaian berupa angka, jadi bisa dijumlahkan.
+[click] Kelima, bukti dukung berupa link.
+[click] Keenam, simpan. Fitur kirim ke kipApp dari sini masih tahap uji.
+-->
+
+---
+
+# PJ (1/2): rekap minggu tim
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="pj-week-detail" :clicks="$clicks" />
+
+<!--
+Sekarang sisi PJ. Ini rekap satu minggu untuk satu tim, dengan data nyata tim MTI.
+[click] Pertama, PJ memilih tim yang ia pimpin.
+[click] Kedua, kegiatan semua anggota ada dalam satu tabel. Tidak ada lagi lembar Excel yang harus dikumpulkan.
+[click] Ketiga, status tiap kegiatan, misalnya Terkirim ke atasan.
+[click] Keempat, kalau masih butuh Excel untuk bahan rapat, tinggal download dari sini.
+-->
+
+---
+
+# PJ (2/2): parafrase dan kunci
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="pj-paraphrase" :clicks="$clicks" />
+
+<!--
+Ini popup parafrase. PJ menulis satu parafrase untuk satu RK, dengan target dan capaian berupa angka.
+[click] Pertama, di kiri ada kontribusi tiap anggota. PJ membaca, lalu bisa mengambil kalimatnya.
+[click] Kedua, di kanan PJ menulis parafrase sendiri. Tidak ada isi otomatis, karena ini memang butuh penilaian PJ.
+[click] Ketiga, target, satuan, dan capaian untuk RK itu, berupa angka.
+[click] Keempat, simpan, atau simpan dan kunci supaya rekap tidak berubah lagi.
+-->
+
+---
+
+# Pimpinan (1/4): Kepatuhan Rencana
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="head-compliance" :clicks="$clicks" />
+
+<!--
+Sekarang sisi pimpinan. Ini Kepatuhan Rencana, dengan data nyata semua tim.
+[click] Pertama, aturannya jelas: batas pengisian rencana adalah Senin pukul sembilan pagi.
+[click] Kedua, kartu Minggu ini menunjukkan berapa persen anggota yang sudah membuat rencana. Saat ini masih nol, karena belum ada tim yang memakai ritual ini.
+[click] Ketiga, kartu Triwulan ini menunjukkan berapa persen rencana minggu lalu yang berakhir selesai.
+[click] Keempat, tabel per tim per minggu. Warna merah artinya belum ada rencana. Dari sini pimpinan tahu tim mana yang perlu diingatkan.
+-->
+
+---
+
+# Pimpinan (2/4): Perlu perhatian
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="head-overview" :clicks="$clicks" />
+
+<!--
+Ini panel Perlu perhatian di Review Bersama. Angkanya data nyata.
+[click] Pertama, kegiatan yang belum punya target. Bulan ini ada enam.
+[click] Kedua, kegiatan yang sudah selesai tapi belum ada capaiannya. Ada enam ratus empat puluh lima dalam enam puluh hari terakhir.
+[click] Ketiga, anggota yang belum punya rencana minggu ini. Delapan puluh enam orang.
+[click] Keempat, kenaikan pangkat atau jenjang. Daftar siapa yang siap atau hampir siap.
+-->
+
+---
+
+# Pimpinan (3/4): Angka Kredit Tim
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="head-credit" :clicks="$clicks" />
+
+<!--
+Ini Angka Kredit Tim, celah yang tidak ada di kipApp. Dulu dihitung terpisah di spreadsheet.
+[click] Pertama, filter status: Siap diusulkan, Hampir, Berjalan, Jenjang puncak, dan Bukan JF.
+[click] Kedua, kolom Menuju menunjukkan pangkat atau jenjang berikutnya yang dituju tiap pegawai.
+[click] Ketiga, angka kredit yang sudah terkumpul dibanding yang dibutuhkan.
+[click] Keempat, statusnya. Siap diusulkan, atau Hampir. Dengan ini pimpinan tahu sejak dini siapa yang mendekati kenaikan pangkat.
+-->
+
+---
+
+# Pimpinan (4/4): Kertas Kerja FRA
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="head-fra" :clicks="$clicks" />
+
+<!--
+Ini Kertas Kerja FRA, tempat nilai SAKIP. Dulu spreadsheet, sekarang form dengan rumus yang sama.
+[click] Pertama, pilih triwulannya.
+[click] Kedua, nilai SAKIP tahun ini.
+[click] Ketiga, predikat SAKIP dihitung otomatis dari angka yang diisi.
+[click] Keempat, tabel indikator: target, alokasi, realisasi, dan capaian per triwulan. Tim pemilik tiap indikator juga dicatat.
+-->
+
+---
+
+# Semua peran: Struktur Organisasi
+
+<span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
+
+<Shot id="org" :clicks="$clicks" />
+
+<!--
+Terakhir, Struktur Organisasi: pohon dari satker, tim, ketua, dan anggota. Ini data nyata kita.
+[click] Pertama, kolom pencarian untuk mencari nama pegawai atau tim.
+[click] Kedua, nama satker dan kepala selalu pinned di paling atas, seperti pohon organisasi di Workday.
+[click] Ketiga, tim yang sedang dilihat ikut pinned di bawahnya, sambil daftar anggota digulir.
+[click] Keempat, ketua tim ditandai. Dan kalau satu orang diklik, kelihatan di tim mana saja ia berada, karena satu pegawai bisa ada di beberapa tim.
+-->
+
+---
+
 # Yang sudah dikerjakan kipApp
 
 <p class="lead">Kami memeriksa kipApp dengan akun anggota pada 18 Oktober 2026.</p>
@@ -508,16 +671,16 @@ Sekarang bagian yang kami khawatirkan, dan ini alasan permintaan ketiga saya nan
 # Tantangan 3: data nyata tidak rapi
 
 <div class="grid2" style="margin-top:1rem">
-<div class="card warn"><b>Tantangan</b><br>Data kipApp yang masuk tidak selalu lengkap: link bukti sangat panjang, dan sebagian kegiatan tidak punya RK atau tim.</div>
-<div v-click class="card ok"><b>Solusi</b><br>Kolom bukti dilebarkan. Kegiatan yang punya RK dan tim di-import menjadi baris mingguan, sisanya dilewati dan tidak merusak data lain.</div>
+<div class="card warn"><b>Tantangan</b><br>Data dari kipApp tidak selalu rapi: link bukti ada yang sangat panjang, dan sebagian kegiatan tidak punya RK atau tim.</div>
+<div v-click class="card ok"><b>Solusi</b><br>Link bukti yang panjang sekarang disimpan utuh. Kegiatan yang punya RK dan tim di-import jadi baris mingguan, sisanya di-skip tanpa merusak data lain.</div>
 </div>
 
-<div v-click class="card" style="margin-top:1rem"><span class="big">9.756</span> kegiatan kipApp di-import menjadi <span class="big">9.187</span> baris mingguan. Sekitar 570 dilewati karena tidak punya RK atau tim.</div>
+<div v-click class="card" style="margin-top:1rem"><span class="big">9.756</span> kegiatan kipApp di-import jadi <span class="big">9.187</span> baris mingguan. Sekitar 570 di-skip karena tidak punya RK atau tim.</div>
 
 <!--
 Tantangan berikutnya: data nyata tidak selalu rapi. Link bukti ada yang sangat panjang, dan sebagian kegiatan tidak punya RK atau tim.
-[click] Solusi kami: kolom bukti dilebarkan, dan hanya kegiatan yang punya RK dan tim yang di-import menjadi baris mingguan. Sisanya dilewati tanpa merusak data lain.
-[click] Angkanya: dari 9.756 kegiatan kipApp, 9.187 menjadi baris mingguan. Sekitar 570 dilewati.
+[click] Solusi kami: link bukti yang panjang disimpan utuh, dan hanya kegiatan yang punya RK dan tim yang di-import jadi baris mingguan. Sisanya di-skip tanpa merusak data lain.
+[click] Angkanya: dari 9.756 kegiatan kipApp, 9.187 menjadi baris mingguan. Sekitar 570 di-skip.
 -->
 
 ---
