@@ -41,7 +41,7 @@ Saya mulai dari masalahnya, lalu cara kerja yang baru, apa yang belum ada di kip
 <div class="grid2 compact">
 <div v-click class="card"><b>Tidak terlihat.</b> Siapa yang sudah punya rencana dan siapa yang sudah mencapai, per tim dan per minggu.</div>
 <div v-click class="card"><b>Disusun manual.</b> Bahan Rapat Mingguan, Rapat Bulanan, dan FRA triwulan disusun di Excel, satu lembar per tim, dari copy-paste kegiatan anggota.</div>
-<div v-click class="card warn"><b>Tidak bisa untuk perencanaan.</b> kipApp tidak bisa diisi untuk tanggal ke depan, jadi rencana minggu depan tidak bisa dicatat di sana.</div>
+<div v-click class="card warn"><b>Tidak bisa untuk perencanaan.</b> kipApp tidak bisa diisi untuk tanggal di masa depan, jadi rencana minggu depan tidak bisa dicatat di sana.</div>
 <div v-click class="card"><b>Angka berupa teks.</b> Target dan realisasi diketik sebagai kalimat, sehingga tidak bisa dijumlahkan.</div>
 <div v-click class="card warn"><b>Telat ketahuan.</b> Pegawai yang belum punya rencana baru ketahuan saat rapat.</div>
 <div v-click class="card warn"><b>Menyita waktu PJ.</b> Penanggung jawab tim (PJ) menulis paragraf rekap setiap minggu.</div>
@@ -51,7 +51,7 @@ Saya mulai dari masalahnya, lalu cara kerja yang baru, apa yang belum ada di kip
 Kita mulai dari masalahnya. kipApp adalah sistem resmi kita untuk SKP dan kegiatan harian. kipApp tidak salah, ia memang dibuat untuk mencatat kegiatan pegawai. Yang belum ada adalah gambaran per tim dan per minggu, dan satu hal lagi yang akan saya jelaskan sebentar.
 [click] Pertama, hal itu tidak terlihat. Kita tidak bisa langsung tahu siapa yang sudah punya rencana dan siapa yang sudah mencapai, per tim dan per minggu.
 [click] Kedua, bahan rapat disusun manual. Rapat mingguan, rapat bulanan, dan FRA triwulan disusun di Excel, satu lembar per tim, dari copy-paste kegiatan anggota.
-[click] Ketiga, ini penting: kipApp tidak bisa dipakai untuk perencanaan. Form-nya menolak tanggal ke depan, jadi rencana minggu depan tidak bisa dicatat di sana.
+[click] Ketiga, ini penting: kipApp tidak bisa dipakai untuk perencanaan. Form-nya menolak tanggal di masa depan, jadi rencana minggu depan tidak bisa dicatat di sana.
 [click] Keempat, angka target dan realisasi diketik sebagai kalimat, jadi tidak bisa dijumlahkan.
 [click] Kelima, telat ketahuan. Pegawai yang belum punya rencana baru ketahuan saat rapat, padahal saat itu sudah terlambat.
 [click] Keenam, ini menyita waktu PJ. Setiap minggu PJ menulis paragraf rekap, dan itu menghabiskan waktu.
@@ -99,11 +99,11 @@ Pendekatan kami: Kinetik melengkapi kipApp. Kami tidak membuat sistem tandingan.
 <tr v-click><td>Target dan capaian bisa dijumlahkan</td><td>Bisa, setelah diketik ulang</td><td>Teks di dalam indikator</td><td>Angka per RK</td></tr>
 <tr v-click><td>Peringatan bagi yang belum punya rencana</td><td>Tidak ada</td><td>Tidak ada</td><td>Ada</td></tr>
 <tr v-click><td>Catatan resmi SKP</td><td>Bukan</td><td>Ya</td><td>Tetap di kipApp</td></tr>
-<tr v-click><td>Rencana ke depan</td><td>Terpisah dari kipApp</td><td>Form menolak tanggal ke depan</td><td>Tersimpan di Kinetik dan bisa dikirim ke kipApp</td></tr>
+<tr v-click><td>Rencana untuk masa depan</td><td>Terpisah dari kipApp</td><td>Form menolak tanggal di masa depan</td><td>Tersimpan di Kinetik dan bisa dikirim ke kipApp</td></tr>
 </tbody>
 </table>
 
-<div v-click class="card ok" style="margin-top:.8rem"><b>kipApp sebenarnya bisa menyimpan rencana ke depan.</b> Server kipApp menerima kegiatan bertanggal ke depan, dan sudah kami uji pada SKP sendiri. Yang menolaknya hanya validasi di form kipApp. Kinetik memakai jalur itu.</div>
+<div v-click class="card ok" style="margin-top:.8rem"><b>kipApp sebenarnya bisa menyimpan rencana untuk masa depan.</b> Server kipApp menerima kegiatan dengan tanggal di masa depan, dan sudah kami uji pada SKP sendiri. Yang menolaknya hanya validasi di form kipApp. Kinetik memakai jalur itu.</div>
 
 <!--
 Pertanyaan yang wajar: kenapa tidak tetap memakai Excel, atau kenapa tidak kipApp saja?
@@ -112,8 +112,8 @@ Pertanyaan yang wajar: kenapa tidak tetap memakai Excel, atau kenapa tidak kipAp
 [click] Target dan capaian. Di kipApp, angkanya hanya teks di dalam indikator. Di Kinetik, angka per RK sehingga bisa dijumlahkan.
 [click] Peringatan bagi yang belum punya rencana. Excel dan kipApp tidak punya. Kinetik punya.
 [click] Catatan resmi SKP tetap di kipApp. Excel bukan catatan resmi, dan Kinetik tidak mengambil alih peran itu.
-[click] Rencana ke depan. Form kipApp menolak tanggal ke depan.
-[click] Tetapi ada temuan penting. Server kipApp sebenarnya menerima kegiatan bertanggal ke depan, dan sudah kami uji pada SKP kami sendiri. Yang menolak hanya validasi di form. Kinetik memakai jalur itu, jadi rencana mingguan bisa ikut tercatat di kipApp.
+[click] Rencana untuk masa depan. Form kipApp menolak tanggal di masa depan.
+[click] Tetapi ada temuan penting. Server kipApp sebenarnya menerima kegiatan dengan tanggal di masa depan, dan sudah kami uji pada SKP kami sendiri. Yang menolak hanya validasi di form. Kinetik memakai jalur itu, jadi rencana mingguan bisa ikut tercatat di kipApp.
 -->
 
 ---
@@ -352,7 +352,7 @@ Kita mulai dari sisi anggota. Ini halaman Rekap Mingguan milik satu anggota, den
 Ini form untuk menambah kegiatan atau rencana. Bentuknya sengaja dibuat mirip form kipApp, supaya anggota tidak perlu belajar ulang.
 [click] Pertama, anggota memilih RK dari daftar RK miliknya.
 [click] Kedua, menulis kegiatan, atau mengambilnya dari List Aktivitas.
-[click] Ketiga, ini yang penting: tanggal ke depan boleh diisi. Di form kipApp, ini ditolak, jadi di sinilah perencanaan jadi mungkin.
+[click] Ketiga, ini yang penting: tanggal di masa depan boleh diisi. Di form kipApp, ini ditolak, jadi di sinilah perencanaan jadi mungkin.
 [click] Keempat, target, satuan, dan capaian berupa angka, jadi bisa dijumlahkan.
 [click] Kelima, bukti dukung berupa link.
 [click] Keenam, simpan. Fitur kirim ke kipApp dari sini masih tahap uji.
@@ -502,7 +502,7 @@ Sebelum bicara kekurangan, kami ingin adil kepada kipApp. Kami memeriksa kipApp 
 <tr v-click><td>Kegiatan dilihat per pegawai, tidak ada rekap mingguan tingkat tim</td><td>Rekap Mingguan, Bulanan, dan Triwulanan</td></tr>
 <tr v-click><td>Tidak ada parafrase PJ per RK</td><td>Satu parafrase PJ untuk setiap RK</td></tr>
 <tr v-click><td>Target dan realisasi hanya teks di dalam indikator</td><td>Target dan capaian berupa angka per RK</td></tr>
-<tr v-click><td>Form menolak rencana bertanggal ke depan, padahal server menerimanya</td><td>Rencana mingguan tersimpan, dan bisa dikirim ke kipApp</td></tr>
+<tr v-click><td>Form menolak rencana dengan tanggal di masa depan, padahal server menerimanya</td><td>Rencana mingguan tersimpan, dan bisa dikirim ke kipApp</td></tr>
 <tr v-click><td>Tidak ada peringatan dini bagi pegawai tanpa rencana</td><td>Kepatuhan Rencana dan panel "Perlu perhatian"</td></tr>
 </tbody>
 </table>
@@ -512,7 +512,7 @@ Sekarang apa yang belum ada. Lima hal untuk monitoring mingguan.
 [click] Kegiatan di kipApp dilihat per pegawai. Tidak ada rekap mingguan tingkat tim. Kinetik menambahkan rekap mingguan, bulanan, dan triwulanan.
 [click] Tidak ada parafrase PJ per RK. Kinetik menyediakan satu parafrase untuk setiap RK.
 [click] Target dan realisasi hanya teks di dalam indikator. Kinetik menyimpannya sebagai angka per RK.
-[click] Form kipApp menolak rencana bertanggal ke depan, padahal server menerimanya. Kinetik menyimpan rencana mingguan dan bisa mengirimnya ke kipApp.
+[click] Form kipApp menolak rencana dengan tanggal di masa depan, padahal server menerimanya. Kinetik menyimpan rencana mingguan dan bisa mengirimnya ke kipApp.
 [click] Tidak ada peringatan dini bagi pegawai tanpa rencana. Kinetik punya Kepatuhan Rencana dan panel Perlu perhatian.
 -->
 

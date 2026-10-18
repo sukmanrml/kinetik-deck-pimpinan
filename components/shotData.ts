@@ -50,7 +50,7 @@ export const shots: Record<string, ShotDef> = {
                 "n": 3,
                 "x": 34,
                 "y": 49,
-                "text": "Tanggal ke depan boleh diisi. Di form kipApp, ini ditolak."
+                "text": "Tanggal di masa depan boleh diisi. Di form kipApp, ini ditolak."
             },
             {
                 "n": 4,
