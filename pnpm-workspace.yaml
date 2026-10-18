@@ -1,0 +1,3 @@
+shamefullyHoist: true
+overrides:
+  markdown-it: ^14.0.0
