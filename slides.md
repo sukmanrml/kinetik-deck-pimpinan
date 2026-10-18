@@ -3,6 +3,8 @@ theme: default
 title: Kinetik - Pemantauan Kinerja Tim
 info: Paparan untuk Kepala BPS Provinsi Sulawesi Tengah
 colorSchema: light
+duration: 20min
+timer: stopwatch
 aspectRatio: 16/9
 transition: fade
 author: Sukma Nirmala Dewi, S.Tr.Stat.
@@ -24,10 +26,10 @@ class: cover-blue
 <p style="opacity:.9;margin-top:.8rem;font-size:.9rem;line-height:1.35"><b>Sukma Nirmala Dewi, S.Tr.Stat.</b><br>Pranata Komputer Ahli Pertama, Tim Metodologi dan Teknologi Informasi (MTI)<br>BPS Provinsi Sulawesi Tengah · NIP 200001142022012003</p>
 
 <!--
-Selamat pagi, Bapak/Ibu pimpinan. Terima kasih atas waktunya.
-Tujuan paparan ini satu: menunjukkan bagaimana Kinetik membuat kinerja tim terlihat setiap minggu, tanpa menggantikan kipApp.
-Kita mulai dari masalahnya, lalu cara kerja baru, tantangan yang sudah kami atasi, dan terakhir permintaan kami kepada pimpinan.
-Durasi sekitar 15 menit.
+Selamat pagi, Bapak dan Ibu pimpinan. Terima kasih sudah menyediakan waktu.
+Nama saya Sukma Nirmala Dewi, dari Tim Metodologi dan Teknologi Informasi.
+Hari ini saya akan menceritakan satu aplikasi yang kami bangun, namanya Kinetik. Tujuannya sederhana: membuat kinerja tim terlihat setiap minggu, tanpa menggantikan kipApp.
+Saya mulai dari masalahnya, lalu cara kerja yang baru, apa yang belum ada di kipApp, tantangan yang kami hadapi, dan di akhir tiga hal yang kami minta dari Bapak dan Ibu. Kira-kira dua puluh menit.
 -->
 
 ---
@@ -41,13 +43,16 @@ Durasi sekitar 15 menit.
 <div v-click class="card"><b>Disusun dengan tangan.</b> Bahan Rapat Mingguan, Rapat Bulanan, dan FRA triwulan disusun di Excel, satu lembar per tim, dari salinan kegiatan anggota.</div>
 <div v-click class="card"><b>Angka berupa teks.</b> Target dan realisasi diketik sebagai kalimat, sehingga tidak bisa dijumlahkan.</div>
 <div v-click class="card warn"><b>Terlambat diketahui.</b> Pegawai yang belum punya rencana baru ketahuan saat rapat.</div>
-<div v-click class="card warn" style="grid-column:1 / 3"><b>Menyita waktu PJ.</b> Penanggung jawab tim (PJ) menulis paragraf rekap setiap minggu.</div>
+<div v-click class="card warn" style="grid-column:1 / 3"><b>Menyita waktu PJ.</b> Penanggung jawab tim, yang kami sebut PJ, menulis paragraf rekap setiap minggu.</div>
 </div>
 
 <!--
-Lima masalah yang kami temui. kipApp tidak salah: ia dirancang untuk mencatat kegiatan pegawai.
-Yang belum ada adalah lapisan di atasnya untuk melihat tim secara utuh.
-Klik satu per satu. Tekankan masalah keempat dan kelima: pimpinan tahu belakangan, dan PJ kehabisan waktu.
+Kita mulai dari masalahnya. kipApp adalah sistem resmi kita untuk SKP dan kegiatan harian. kipApp tidak salah, ia memang dirancang untuk mencatat kegiatan pegawai. Yang belum ada adalah gambaran per tim dan per minggu.
+[click] Pertama, hal itu tidak terlihat. Kita tidak bisa langsung tahu siapa yang sudah punya rencana dan siapa yang sudah mencapai, per tim dan per minggu.
+[click] Kedua, bahan rapat disusun dengan tangan. Rapat mingguan, rapat bulanan, dan FRA triwulan disusun di Excel, satu lembar per tim, dari salinan kegiatan anggota.
+[click] Ketiga, angka target dan realisasi diketik sebagai kalimat, jadi tidak bisa dijumlahkan.
+[click] Keempat, terlambat diketahui. Pegawai yang belum punya rencana baru ketahuan saat rapat, padahal saat itu sudah terlambat.
+[click] Kelima, ini memakan waktu PJ. Setiap minggu PJ menulis paragraf rekap, dan itu menghabiskan waktu.
 -->
 
 ---
@@ -73,10 +78,11 @@ Klik satu per satu. Tekankan masalah keempat dan kelima: pimpinan tahu belakanga
 </div>
 
 <!--
-kipApp tetap catatan resmi. Kami tidak membuat sistem tandingan.
-Kinetik membaca RK dan kegiatan anggota dari kipApp, lalu menambahkan lapisan yang belum ada.
-Kinetik juga bisa mengirim kegiatan dan rencana ke kipApp, sehingga pegawai cukup mengisi sekali. Bagian ini masih tahap uji.
-Pimpinan melihat hasilnya lewat tampilan pemantauan.
+Pendekatan kami: Kinetik melengkapi kipApp. Kami tidak membuat sistem tandingan. kipApp tetap catatan resmi.
+[click] Kinetik membaca RK dan kegiatan anggota dari kipApp.
+[click] Kinetik juga bisa mengirim kegiatan dan rencana kembali ke kipApp, sehingga pegawai cukup mengisi sekali. Bagian mengirim ini masih tahap uji.
+[click] Yang Kinetik tambahkan adalah lapisan yang belum ada: rencana mingguan, target dan capaian berupa angka, parafrase PJ untuk setiap RK, penguncian rekap, dan tampilan pemantauan. Catatan resmi tetap di kipApp.
+[click] Hasilnya dilihat pimpinan lewat tampilan pemantauan.
 -->
 
 ---
@@ -98,10 +104,14 @@ Pimpinan melihat hasilnya lewat tampilan pemantauan.
 <div v-click class="card ok" style="margin-top:.8rem"><b>kipApp sebenarnya bisa menyimpan rencana ke depan.</b> Server kipApp menerima kegiatan bertanggal ke depan, dan sudah kami uji pada SKP sendiri. Yang menolaknya hanya validasi di formulir kipApp. Kinetik memakai jalur itu.</div>
 
 <!--
-Kenapa tidak tetap memakai Excel saja? Karena pekerjaan yang sama ditulis dua kali dan disalin tangan.
-Kenapa tidak kipApp saja? kipApp bagus sebagai catatan resmi, tetapi tidak merekap tim, tidak menyimpan angka yang bisa dijumlahkan, dan tidak memberi peringatan dini.
-Satu temuan penting: kipApp sebenarnya mampu menyimpan rencana ke depan. Server menerimanya. Yang menghalangi hanya validasi di tampilan formulir.
-Karena itu rencana mingguan di Kinetik bisa ikut tercatat di kipApp.
+Pertanyaan yang wajar: kenapa tidak tetap memakai Excel, atau kenapa tidak kipApp saja?
+[click] Pegawai mencatat sekali. Di Excel, pekerjaan dicatat dua kali. Di kipApp dan Kinetik, cukup sekali.
+[click] Rekap tim per minggu. Di Excel disalin dengan tangan, di kipApp tidak ada, di Kinetik tersusun otomatis.
+[click] Target dan capaian. Di kipApp, angkanya hanya teks di dalam indikator. Di Kinetik, angka per RK sehingga bisa dijumlahkan.
+[click] Peringatan bagi yang belum punya rencana. Excel dan kipApp tidak punya. Kinetik punya.
+[click] Catatan resmi SKP tetap di kipApp. Excel bukan catatan resmi, dan Kinetik tidak mengambil alih peran itu.
+[click] Rencana ke depan. Formulir kipApp menolak tanggal ke depan.
+[click] Tetapi ada temuan penting. Server kipApp sebenarnya menerima kegiatan bertanggal ke depan, dan sudah kami uji pada SKP kami sendiri. Yang menolak hanya validasi di formulir. Kinetik memakai jalur itu, jadi rencana mingguan bisa ikut tercatat di kipApp.
 -->
 
 ---
@@ -120,9 +130,12 @@ Karena itu rencana mingguan di Kinetik bisa ikut tercatat di kipApp.
 <div v-click class="card warn" style="margin-top:1.6rem"><b>Akibatnya:</b> pekerjaan berulang, mudah salah salin, dan pimpinan baru melihat hasilnya setelah semua lembar terkumpul.</div>
 
 <!--
-Ikuti alurnya dari kiri ke kanan. Pekerjaan yang sama ditulis dua kali: di kipApp dan di Excel.
-Lalu disalin oleh PJ, dikumpulkan staf, baru disusun untuk rapat.
-Setiap salin-tempel memakan waktu dan membuka peluang salah.
+Begini cara lama bekerja. Satu pekerjaan yang sama dicatat dua kali, lalu disalin berulang.
+[click] Pegawai menulis di kipApp dan juga di lembar Excel sendiri.
+[click] PJ menyalin isi lembar tiap anggota ke lembar rekap tim.
+[click] Staf mengumpulkan lembar semua tim.
+[click] Barulah bahan rapat disusun, dengan angka yang masih berupa teks.
+[click] Akibatnya, pekerjaan berulang dan mudah salah salin. Pimpinan baru melihat hasilnya setelah semua lembar terkumpul.
 -->
 
 ---
@@ -142,9 +155,13 @@ Setiap salin-tempel memakan waktu dan membuka peluang salah.
 <div v-click class="card ok" style="margin-top:1.6rem"><b>Hasilnya:</b> tidak ada salin-tempel antarlembar, dan masalah terlihat saat masih bisa diperbaiki.</div>
 
 <!--
-Bandingkan dengan slide sebelumnya. Lima langkah, tetapi hanya langkah pertama dan keempat yang dikerjakan manusia.
-Pegawai cukup mencatat sekali. PJ tidak lagi menyalin, tetapi memeriksa dan menulis satu parafrase per RK.
-Pimpinan melihat panel Perlu perhatian.
+Sekarang cara baru. Bandingkan dengan slide tadi: hanya langkah pertama dan keempat yang dikerjakan manusia.
+[click] Pegawai mencatat kegiatan, di kipApp atau di Kinetik.
+[click] Kinetik dan kipApp sinkron otomatis.
+[click] Rekap Mingguan tersusun sendiri per pegawai.
+[click] PJ tidak lagi menyalin. PJ memeriksa, lalu menulis satu parafrase untuk setiap RK.
+[click] Pimpinan memantau lewat panel Perlu perhatian.
+[click] Hasilnya: tidak ada salin-tempel antarlembar, dan masalah terlihat saat masih bisa diperbaiki.
 -->
 
 ---
@@ -167,11 +184,11 @@ Pimpinan melihat panel Perlu perhatian.
 <div v-click="4" class="card ok" style="margin-top:1.6rem"><b>Waktu PJ beralih</b> dari menyalin ke memeriksa dan menulis.</div>
 
 <!--
-Tiga pekerjaan yang dulu dikerjakan dengan tangan.
-Klik 1: mengumpulkan kegiatan anggota, sekarang otomatis lewat sinkron dari kipApp.
-Klik 2: menggabung rekap tim, sekarang otomatis.
-Klik 3: menulis paragraf rekap. Ini tetap dikerjakan PJ karena perlu penilaian manusia, tetapi bahannya sudah siap dan cukup satu parafrase per RK.
-Kami sengaja tidak menyebut angka penghematan waktu karena belum kami ukur.
+Slide ini memperlihatkan pekerjaan yang berpindah. Tiga pekerjaan yang dulu dikerjakan dengan tangan.
+[click] Mengumpulkan kegiatan anggota. Sekarang otomatis lewat sinkron dari kipApp.
+[click] Menggabung rekap tim. Ini juga otomatis.
+[click] Menulis paragraf rekap. Perhatikan, pekerjaan ini berwarna oranye karena tetap dikerjakan PJ. Itu memang perlu penilaian manusia, tetapi bahannya sudah siap dan cukup satu parafrase per RK.
+[click] Jadi waktu PJ beralih dari menyalin ke memeriksa dan menulis. Kami sengaja tidak menyebut angka penghematan waktu karena belum kami ukur.
 -->
 
 ---
@@ -191,9 +208,12 @@ Kami sengaja tidak menyebut angka penghematan waktu karena belum kami ukur.
 <div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> lembar Excel pribadi, penyerahan lembar ke PJ, dan pengetikan ulang isi yang sama. <span class="small">Kirim hasil ke kipApp dari Kinetik masih tahap uji.</span></div>
 
 <!--
-Ini SOP untuk anggota. Rencana diisi paling lambat Senin pukul 09.00.
-Selama minggu, anggota cukup mencatat sekali. Di akhir minggu, ia mengisi angka target dan capaian, uraian, dan tautan bukti.
-Yang hilang: lembar Excel pribadi dan penyerahan lembar ke PJ.
+Sekarang prosedur kerja untuk tiap peran, dimulai dari anggota.
+[click] Awal minggu, paling lambat Senin pukul sembilan pagi, anggota mengisi rencana minggu ini di Rekap Mingguan. Dulu rencana ini disiapkan di lembar Excel sendiri.
+[click] Selama minggu, anggota mencatat sekali, di kipApp atau Kinetik. Yang lain mengikuti lewat sinkron. Dulu dicatat dua kali.
+[click] Akhir minggu, anggota mengisi target dan capaian berupa angka, uraian, dan tautan bukti. Dulu diketik sebagai kalimat.
+[click] Menjelang rapat, tidak ada lagi lembar yang diserahkan ke PJ, karena PJ sudah melihat rekapnya.
+[click] Yang dipangkas untuk anggota: lembar Excel pribadi, penyerahan lembar, dan pengetikan ulang. Fitur kirim hasil ke kipApp dari Kinetik masih tahap uji.
 -->
 
 ---
@@ -213,8 +233,12 @@ Yang hilang: lembar Excel pribadi dan penyerahan lembar ke PJ.
 <div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> menagih satu per satu, menyalin ke lembar rekap, dan menghitung manual. <b>Tetap oleh PJ:</b> menilai isi dan menulis parafrase.</div>
 
 <!--
-Ini SOP untuk PJ. Pekerjaan yang hilang adalah menagih, menyalin, dan menghitung.
-Yang tetap dikerjakan PJ adalah yang memang perlu penilaian: memeriksa angka dan menulis satu parafrase per RK, lalu mengunci rekap.
+Untuk PJ.
+[click] Awal minggu, PJ membuka Kepatuhan Rencana. Yang belum mengisi langsung terlihat, jadi PJ tidak perlu menagih satu per satu.
+[click] Selama minggu, PJ melihat rencana dan kegiatan anggota di Rekap Mingguan tim, tanpa menunggu lembar dari anggota.
+[click] Akhir minggu, PJ memeriksa angka yang sudah terkumpul per RK. Tidak ada lagi menyalin dan menghitung dengan tangan.
+[click] Menutup rekap, PJ menulis satu parafrase untuk setiap RK. PJ boleh menyisipkan kalimat dari anggota, mengisi target dan capaian RK, lalu mengunci rekap.
+[click] Yang dipangkas: menagih, menyalin, dan menghitung manual. Yang tetap dikerjakan PJ adalah yang memang perlu penilaian: memeriksa isi dan menulis parafrase.
 -->
 
 ---
@@ -234,8 +258,12 @@ Yang tetap dikerjakan PJ adalah yang memang perlu penilaian: memeriksa angka dan
 <div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> menunggu bahan disusun staf, membuka banyak lembar, dan bertanya satu per satu siapa yang belum mengisi.</div>
 
 <!--
-Ini SOP untuk pimpinan. Pimpinan tidak mengisi data. Pimpinan membaca, lalu menindaklanjuti lewat Catatan Pimpinan.
-Yang hilang: menunggu bahan dari staf dan membuka banyak lembar.
+Untuk pimpinan. Pimpinan tidak mengisi data. Pimpinan membaca, lalu menindaklanjuti.
+[click] Sebelum rapat, pimpinan membuka panel Perlu perhatian dan rekap per minggu, bulan, atau triwulan. Tidak perlu menunggu staf menyusun bahan.
+[click] Saat rapat, rekap tim dan angka capaian dibaca langsung di layar, bukan dari lembar Excel tiap tim.
+[click] Untuk tindak lanjut, pimpinan menulis Catatan Pimpinan, dan PJ menerima notifikasi.
+[click] Pada triwulan, rekap FRA tersusun dari rekap bulanan.
+[click] Yang dipangkas untuk pimpinan: menunggu bahan disusun, membuka banyak lembar, dan bertanya satu per satu siapa yang belum mengisi.
 -->
 
 ---
@@ -252,30 +280,78 @@ Yang hilang: menunggu bahan dari staf dan membuka banyak lembar.
 </table>
 
 <!--
-Ringkasan satu layar. Setiap peran kehilangan pekerjaan salin dan tagih, dan tetap memegang bagian yang perlu penilaian.
+Ringkasan satu layar.
+[click] Anggota: tidak lagi punya lembar pribadi dan tidak mengetik ulang. Tetap mencatat kegiatan, mengisi target, capaian, dan bukti.
+[click] PJ: tidak lagi menagih, menyalin, dan menghitung manual. Tetap memeriksa angka, menulis parafrase, dan mengunci rekap.
+[click] Pimpinan: tidak lagi menunggu bahan dan membuka banyak lembar. Tetap membaca pemantauan dan memutuskan tindak lanjut.
+Intinya, pekerjaan salin dan tagih hilang, dan bagian yang perlu penilaian manusia tetap di tangan manusia.
 -->
 
 ---
 
-# Yang belum ada di kipApp
+# Yang sudah dikerjakan kipApp
 
-<p class="lead">Enam kekosongan yang kami temukan, dan jawaban Kinetik.</p>
+<p class="lead">Kami memeriksa kipApp dengan akun anggota pada 18 Oktober 2026.</p>
+
+<div class="grid3 compact">
+<div v-click class="card"><b>Perencanaan</b><br><span class="small">Renstra, Perjanjian Kinerja, Rencana Kinerja (tim kerja, RK ketua, proyek, RK anggota, matriks), SKP Tahunan dan Periodik, IKI dan Target.</span></div>
+<div v-click class="card"><b>Pelaksanaan</b><br><span class="small">Kegiatan harian per pegawai: pilih pegawai, tahun, periode SKP, dan rencana kinerja. Ada unduh Excel.</span></div>
+<div v-click class="card"><b>Penilaian</b><br><span class="small">Hasil Kerja, Rekap Prestasi Periodik dan Tahunan: rata-rata hasil kerja, perilaku, predikat, dan nilai prestasi per pegawai.</span></div>
+</div>
+
+<div v-click class="card ok" style="margin-top:.8rem"><b>kipApp adalah catatan resmi yang lengkap untuk perorangan.</b> Kinetik tidak mengulang itu. Kinetik menambahkan tampilan tingkat tim dan satuan kerja yang tidak ada di sana.</div>
+
+<!--
+Sebelum bicara kekurangan, kami ingin adil kepada kipApp. Kami memeriksa kipApp dengan akun anggota pada 18 Oktober 2026.
+[click] Untuk perencanaan, kipApp lengkap: renstra, perjanjian kinerja, rencana kinerja tim, SKP tahunan dan periodik, serta IKI dan target.
+[click] Untuk pelaksanaan, kipApp mencatat kegiatan harian per pegawai. Ada juga unduh Excel.
+[click] Untuk penilaian, ada rekap prestasi periodik dan tahunan: nilai hasil kerja, perilaku, predikat, dan nilai prestasi per pegawai.
+[click] Jadi kipApp adalah catatan resmi yang lengkap untuk perorangan. Kinetik tidak mengulang itu. Kinetik menambahkan tampilan tingkat tim dan satuan kerja yang tidak ada di sana. Satu catatan jujur: kami memeriksa dengan akun anggota, jadi menu khusus pimpinan atau admin tidak kami lihat.
+-->
+
+---
+
+# Yang belum ada di kipApp: pemantauan mingguan
 
 <table class="cmp">
 <thead><tr><th style="width:50%">kipApp saat ini</th><th>Kinetik menambahkan</th></tr></thead>
 <tbody>
-<tr v-click><td>Tidak ada rekap mingguan tingkat tim</td><td>Rekap Mingguan, Bulanan, dan Triwulanan (FRA)</td></tr>
+<tr v-click><td>Kegiatan dilihat per pegawai, tidak ada rekap mingguan tingkat tim</td><td>Rekap Mingguan, Bulanan, dan Triwulanan</td></tr>
 <tr v-click><td>Tidak ada parafrase PJ per RK</td><td>Satu parafrase PJ untuk setiap RK</td></tr>
 <tr v-click><td>Target dan realisasi hanya teks di dalam indikator</td><td>Target dan capaian berupa angka per RK</td></tr>
 <tr v-click><td>Formulir menolak rencana bertanggal ke depan, padahal server menerimanya</td><td>Rencana mingguan tersimpan, dan bisa dikirim ke kipApp</td></tr>
 <tr v-click><td>Tidak ada peringatan dini bagi pegawai tanpa rencana</td><td>Kepatuhan Rencana dan panel "Perlu perhatian"</td></tr>
-<tr v-click><td>Kesiapan kenaikan pangkat (angka kredit) tidak terlihat di tingkat satuan kerja</td><td>Angka Kredit Tim</td></tr>
 </tbody>
 </table>
 
 <!--
-Enam kekosongan yang konkret. Ini bukan kritik terhadap kipApp, karena memang bukan tugas kipApp.
-Baris keempat penting: kipApp sebenarnya bisa menyimpan rencana ke depan. Yang menolak hanya validasi di formulir.
+Sekarang apa yang belum ada. Lima hal untuk pemantauan mingguan.
+[click] Kegiatan di kipApp dilihat per pegawai. Tidak ada rekap mingguan tingkat tim. Kinetik menambahkan rekap mingguan, bulanan, dan triwulanan.
+[click] Tidak ada parafrase PJ per RK. Kinetik menyediakan satu parafrase untuk setiap RK.
+[click] Target dan realisasi hanya teks di dalam indikator. Kinetik menyimpannya sebagai angka per RK.
+[click] Formulir kipApp menolak rencana bertanggal ke depan, padahal server menerimanya. Kinetik menyimpan rencana mingguan dan bisa mengirimnya ke kipApp.
+[click] Tidak ada peringatan dini bagi pegawai tanpa rencana. Kinetik punya Kepatuhan Rencana dan panel Perlu perhatian.
+-->
+
+---
+
+# Dua celah lain: angka kredit dan nilai SAKIP
+
+<table class="cmp">
+<thead><tr><th style="width:36%">Yang tidak ada di kipApp</th><th style="width:30%">Cara lama</th><th>Di Kinetik</th></tr></thead>
+<tbody>
+<tr v-click><td><b>Angka kredit:</b> kipApp hanya menampilkan nilai prestasi per pegawai. Tidak ada angka kredit dan kesiapan naik pangkat</td><td>Dihitung terpisah di spreadsheet</td><td><b>Angka Kredit Tim.</b> Pimpinan melihat siapa yang sudah siap, hampir siap, atau masih berjalan menuju pangkat berikutnya</td></tr>
+<tr v-click><td><b>FRA dan nilai SAKIP:</b> tidak ada formulirnya di kipApp</td><td>Kertas Kerja di spreadsheet, rumus dijaga dengan tangan</td><td><b>Kertas Kerja FRA.</b> Isi realisasi tiap indikator per triwulan, nilai SAKIP dan predikat dihitung otomatis</td></tr>
+</tbody>
+</table>
+
+<div v-click class="card ok" style="margin-top:.8rem"><b>Pimpinan kini bisa melihat sejak dini siapa yang mendekati kenaikan pangkat,</b> dan nilai SAKIP tersusun dari angka yang sama dengan rekap bulanan, tanpa menyalin ulang ke spreadsheet.</div>
+
+<!--
+Dua celah lagi yang penting bagi pimpinan.
+[click] Pertama, angka kredit. kipApp menampilkan nilai prestasi per pegawai, tetapi tidak menampilkan angka kredit dan kesiapan naik pangkat. Dulu ini dihitung terpisah di spreadsheet. Di Kinetik ada Angka Kredit Tim. Pimpinan bisa melihat siapa yang sudah siap, hampir siap, atau masih berjalan menuju pangkat berikutnya.
+[click] Kedua, FRA dan nilai SAKIP. kipApp tidak punya formulirnya. Dulu kami memakai Kertas Kerja di spreadsheet, dengan rumus yang dijaga dengan tangan. Di Kinetik, kami menulis ulang rumus Kertas Kerja itu menjadi formulir. Realisasi tiap indikator diisi per triwulan, dan nilai SAKIP beserta predikatnya dihitung otomatis.
+[click] Dampaknya, pimpinan bisa melihat sejak dini siapa yang mendekati kenaikan pangkat, dan nilai SAKIP tersusun dari angka yang sama dengan rekap bulanan, tanpa menyalin ulang.
 -->
 
 ---
@@ -286,75 +362,109 @@ Baris keempat penting: kipApp sebenarnya bisa menyimpan rencana ke depan. Yang m
 <div v-click class="card"><b>Rekap Mingguan, Bulanan, Triwulanan</b><br><span class="small">Daftar dulu: bulan, lalu minggu, lalu satu minggu.</span></div>
 <div v-click class="card"><b>Kepatuhan Rencana</b><br><span class="small">Siapa yang sudah punya rencana tiap minggu.</span></div>
 <div v-click class="card warn"><b>Perlu perhatian</b><br><span class="small">Target atau capaian kosong, gagal kirim ke kipApp, belum ada rencana, rekap belum selesai, dan kesiapan kenaikan pangkat.</span></div>
-<div v-click class="card"><b>Angka Kredit Tim</b><br><span class="small">Kesiapan kenaikan pangkat di seluruh satuan kerja.</span></div>
+<div v-click class="card"><b>Angka Kredit Tim dan Kertas Kerja FRA</b><br><span class="small">Kesiapan kenaikan pangkat dan nilai SAKIP satuan kerja.</span></div>
 <div v-click class="card"><b>Lihat sebagai</b><br><span class="small">Admin melihat tampilan tiap peran, hanya baca, untuk membantu pengguna.</span></div>
 </div>
 
 <!--
-Lima hal yang bisa dibuka pimpinan.
-Rekap berupa daftar dulu: pilih bulan, lalu minggu, lalu satu minggu, tanpa membuka banyak lembar.
-Perlu perhatian paling berguna untuk pimpinan karena menunjuk hal yang butuh tindakan.
-Lihat sebagai membantu admin memahami apa yang dilihat pengguna, tanpa bisa mengubah data.
+Ini yang bisa dibuka pimpinan di Kinetik.
+[click] Rekap mingguan, bulanan, dan triwulanan. Berupa daftar dulu: pilih bulan, lalu minggu, lalu satu minggu.
+[click] Kepatuhan Rencana, untuk melihat siapa yang sudah punya rencana setiap minggu.
+[click] Perlu perhatian. Ini yang paling berguna: ia menunjuk target atau capaian yang kosong, kegiatan yang gagal terkirim ke kipApp, pegawai tanpa rencana, rekap yang belum selesai, dan kesiapan naik pangkat.
+[click] Angka Kredit Tim dan Kertas Kerja FRA, untuk kenaikan pangkat dan nilai SAKIP.
+[click] Lihat sebagai. Fitur ini untuk admin: melihat tampilan tiap peran dalam mode hanya baca, supaya bisa membantu pengguna tanpa bisa mengubah data.
 -->
 
 ---
 
-# Tantangan 1: kipApp tidak membuka akses resmi untuk sistem lain
+# Tantangan 1: tidak ada pintu resmi ke kipApp
 
-<div class="grid2" style="margin-top:1.2rem">
-<div class="card warn"><b>Tantangan</b><br>kipApp tidak menyediakan akses resmi bagi sistem lain. Token masuknya berlaku 24 jam.</div>
-<div v-click class="card ok"><b>Solusi</b><br>Kami membaca kipApp lewat jalur SSO yang tersedia, memakai token admin satuan kerja untuk data seluruh pegawai. Saat admin kipApp masuk lewat SSO, token bersama diperbarui otomatis.</div>
+<p class="lead">Cara pertama kami: token disalin dengan tangan oleh admin.</p>
+
+<div class="flow">
+<div v-click class="step old"><span class="n">1</span><b>Admin masuk</b>ke kipApp lewat SSO.</div>
+<div v-click class="step old"><span class="n">2</span><b>Membuka alat pengembang</b>di peramban, mencari token di permintaan jaringan.</div>
+<div v-click class="step old"><span class="n">3</span><b>Menyalin token</b>yang panjang itu.</div>
+<div v-click class="step old"><span class="n">4</span><b>Menempel token</b>di halaman Integrasi kipApp pada Kinetik.</div>
+<div v-click class="step old"><span class="n">5</span><b>Berlaku 24 jam.</b>Besok diulang.</div>
 </div>
 
-<div v-click class="card warn" style="margin-top:1rem"><b>Kondisi sekarang:</b> token di server sudah kedaluwarsa, jadi sinkronisasi berhenti sampai admin kipApp masuk lagi lewat SSO. Data yang sudah masuk tidak hilang.</div>
+<div v-click class="card warn" style="margin-top:1.4rem"><b>Kelemahannya:</b> bergantung pada satu orang, dan sinkronisasi berhenti begitu token habis.</div>
 
 <!--
-Kami membaca kipApp lewat jalur SSO yang tersedia, dengan token admin satuan kerja.
-Token itu habis dalam 24 jam, jadi setiap kali admin kipApp masuk lewat SSO, token bersama diperbarui otomatis. Token yang masih berlaku tidak diganti.
-Itu sebabnya sinkronisasi sekarang berhenti: token di server sudah habis. Data yang sudah masuk aman.
+Tantangan pertama: kipApp tidak membuka pintu resmi bagi sistem lain. Cara pertama kami untuk membaca data kipApp dikerjakan dengan tangan oleh admin.
+[click] Admin masuk ke kipApp lewat SSO.
+[click] Admin membuka alat pengembang di peramban dan mencari token di permintaan jaringan.
+[click] Admin menyalin token yang panjang itu.
+[click] Admin menempelnya di halaman Integrasi kipApp pada Kinetik.
+[click] Token itu hanya berlaku dua puluh empat jam. Besok harus diulang.
+[click] Kelemahannya jelas: bergantung pada satu orang, dan sinkronisasi berhenti begitu token habis.
 -->
 
 ---
 
-# Tantangan 2: SSO BPS akan berpindah
+# Cara kedua: pegawai masuk sekali, token diambil otomatis
 
-<div class="grid2" style="margin-top:1.2rem">
-<div class="card warn"><b>Tantangan</b><br>BPS beralih ke SSO baru (accounts.bps.go.id) yang memakai captcha. Peralihan dijadwalkan Desember 2026.</div>
-<div v-click class="card ok"><b>Solusi</b><br>Pegawai masuk satu kali dengan kata sandi SSO. Kata sandi disimpan terenkripsi dan tidak pernah ditampilkan lagi. Dengan itu Kinetik membaca kipApp atas nama pegawai.</div>
+<div class="flow">
+<div v-click class="step"><span class="n">1</span><b>Pegawai masuk</b>ke Kinetik dengan kata sandi SSO, satu kali.</div>
+<div v-click class="step"><span class="n">2</span><b>Kinetik masuk</b>ke kipApp atas nama pegawai lewat jalur SSO.</div>
+<div v-click class="step"><span class="n">3</span><b>Token tersimpan</b>terenkripsi dan diperbarui otomatis.</div>
+<div v-click class="step goal"><span class="n">4</span><b>Admin kipApp masuk</b> dan token bersama untuk seluruh satuan kerja ikut diperbarui.</div>
 </div>
 
-<div v-click class="card warn" style="margin-top:1rem"><b>Rencana:</b> login lokal sebagai cadangan, disiapkan sebelum Desember 2026. Belum dibuat.</div>
+<div v-click class="card ok" style="margin-top:1.6rem"><b>Hasilnya:</b> tidak ada salin-tempel token. Kata sandi disimpan terenkripsi dan tidak pernah ditampilkan lagi.</div>
 
 <!--
-SSO BPS akan berpindah ke yang baru, dan memakai captcha. Itu menyulitkan proses masuk otomatis.
-Pegawai cukup masuk satu kali dengan kata sandi SSO. Kata sandi disimpan terenkripsi dan tidak pernah ditampilkan lagi.
-Satu hal yang belum selesai: login lokal sebagai cadangan masih rencana. Targetnya sebelum Desember 2026.
+Karena itu kami mencari cara kedua. Kami menemukan jalur dari SSO yang bisa dipakai untuk membaca kipApp dan menghubungkannya ke sistem kami.
+[click] Pegawai masuk ke Kinetik dengan kata sandi SSO, cukup satu kali.
+[click] Kinetik masuk ke kipApp atas nama pegawai lewat jalur SSO itu.
+[click] Token tersimpan terenkripsi dan diperbarui otomatis.
+[click] Saat admin kipApp masuk, token bersama untuk seluruh satuan kerja ikut diperbarui. Token yang masih berlaku tidak diganti.
+[click] Hasilnya, tidak ada lagi salin-tempel token. Kata sandi disimpan terenkripsi dan tidak pernah ditampilkan kembali.
 -->
 
 ---
 
-# Tantangan 3 dan 4: data yang masuk berantakan
+# Kekhawatiran: SSO baru menghentikan cara kedua
 
-<div class="grid2" style="margin-top:.8rem">
-<div>
-<div class="card warn"><b>Pegawai kantor lain</b> ikut muncul di data kipApp.</div>
-<div v-click class="card ok"><b>Penjaga kantor</b> hanya menyimpan BPS Provinsi Sulawesi Tengah (unit kerja 100, wilayah 7200_11). Sisanya dinonaktifkan: <b>22</b> orang.</div>
+<div class="grid2" style="margin-top:1rem">
+<div v-click class="card"><b>Sekarang</b><br><span class="small">SSO lama masih bisa dimasuki otomatis. Cara kedua berjalan.</span></div>
+<div v-click class="card warn"><b>Desember 2026</b><br><span class="small">Semua aplikasi BPS pindah ke SSO baru (accounts.bps.go.id) yang memakai captcha dan passkey. Server tidak bisa masuk sendiri.</span></div>
 </div>
-<div>
-<div class="card warn"><b>Data nyata tidak rapi:</b> tautan bukti panjang, sebagian kegiatan tanpa RK atau tanpa tim.</div>
-<div v-click class="card ok"><b>9.756</b> kegiatan kipApp diimpor menjadi <b>9.187</b> baris mingguan. Sekitar 570 dilewati karena tanpa RK atau tim.</div>
-</div>
+
+<div class="grid2" style="margin-top:.6rem">
+<div v-click class="card warn"><b>Bila tidak ada tindakan</b><br><span class="small">Cara kedua berhenti. Setiap orang harus menyalin token sendiri dengan tangan, setiap hari. Lebih berat daripada cara pertama, yang dulu hanya dikerjakan admin.</span></div>
+<div v-click class="card ok"><b>Bila ada akses resmi</b><br><span class="small">Kinetik terdaftar sebagai klien SSO, dan tetap otomatis. Syaratnya domain .go.id, dan subdomain .go.id perlu persetujuan kantor pusat.</span></div>
 </div>
 
 <!--
-Dua masalah data. Pertama, pegawai kantor lain ikut terbaca. Penjaga kantor hanya menyimpan BPS Provinsi Sulawesi Tengah, dan 22 orang lain dinonaktifkan.
-Kedua, data nyata tidak rapi. Dari 9.756 kegiatan kipApp, 9.187 menjadi baris mingguan. Sekitar 570 dilewati karena tidak punya RK atau tim.
-Tautan bukti yang panjang juga sudah kami tangani.
+Sekarang bagian yang kami khawatirkan, dan ini alasan permintaan ketiga saya nanti.
+[click] Saat ini SSO lama masih bisa dimasuki secara otomatis, jadi cara kedua berjalan.
+[click] Pada Desember 2026, semua aplikasi BPS pindah ke SSO baru. SSO baru memakai captcha dan passkey. Artinya, sistem seperti Kinetik tidak bisa lagi masuk sendiri.
+[click] Kalau tidak ada tindakan, cara kedua berhenti. Setiap orang yang memakai Kinetik harus menyalin token sendiri dengan tangan, setiap hari. Itu lebih berat daripada cara pertama, yang dulu hanya dikerjakan oleh admin.
+[click] Jalan keluarnya adalah akses resmi: Kinetik didaftarkan sebagai klien SSO. Syaratnya domain dengan akhiran go titik id, dan subdomain go titik id perlu persetujuan kantor pusat. Karena itu kami butuh dukungan Bapak dan Ibu.
 -->
 
 ---
 
-# Tantangan 5: menjaga data resmi
+# Tantangan 3: data nyata tidak rapi
+
+<div class="grid2" style="margin-top:1rem">
+<div class="card warn"><b>Tantangan</b><br>Data kipApp yang masuk tidak selalu lengkap: tautan bukti sangat panjang, dan sebagian kegiatan tidak punya RK atau tim.</div>
+<div v-click class="card ok"><b>Solusi</b><br>Kolom bukti dilebarkan. Kegiatan yang punya RK dan tim diimpor menjadi baris mingguan, sisanya dilewati dan tidak merusak data lain.</div>
+</div>
+
+<div v-click class="card" style="margin-top:1rem"><span class="big">9.756</span> kegiatan kipApp diimpor menjadi <span class="big">9.187</span> baris mingguan. Sekitar 570 dilewati karena tidak punya RK atau tim.</div>
+
+<!--
+Tantangan berikutnya: data nyata tidak selalu rapi. Tautan bukti ada yang sangat panjang, dan sebagian kegiatan tidak punya RK atau tim.
+[click] Solusi kami: kolom bukti dilebarkan, dan hanya kegiatan yang punya RK dan tim yang diimpor menjadi baris mingguan. Sisanya dilewati tanpa merusak data lain.
+[click] Angkanya: dari 9.756 kegiatan kipApp, 9.187 menjadi baris mingguan. Sekitar 570 dilewati.
+-->
+
+---
+
+# Tantangan 4: menjaga data resmi
 
 <p class="lead">Kinetik tidak boleh merusak catatan resmi di kipApp.</p>
 
@@ -366,9 +476,9 @@ Tautan bukti yang panjang juga sudah kami tangani.
 
 <!--
 Karena kipApp adalah catatan resmi, kami berhati-hati.
-Satu: pengiriman ke kipApp dimatikan secara bawaan, dan diuji dulu pada SKP kami sendiri.
-Dua: hak akses berbeda untuk anggota, PJ, pimpinan, dan admin.
-Tiga: mode lihat saja untuk membantu pengguna tanpa risiko mengubah data.
+[click] Pengiriman ke kipApp dimatikan secara bawaan. Baru kami nyalakan setelah diuji pada SKP kami sendiri.
+[click] Hak akses berbeda untuk anggota, PJ, pimpinan, dan admin.
+[click] Ada mode lihat saja, untuk membantu pengguna tanpa risiko mengubah data.
 -->
 
 ---
@@ -378,19 +488,19 @@ Tiga: mode lihat saja untuk membantu pengguna tanpa risiko mengubah data.
 <p class="lead">Disampaikan apa adanya.</p>
 
 <div class="grid3">
-<div class="card"><span class="big">109</span><br>pegawai di direktori<br><span class="small">87 aktif</span></div>
+<div class="card"><span class="big">87</span><br>pegawai satuan kerja kita</div>
 <div class="card"><span class="big">25</span><br>tim</div>
 <div class="card"><span class="big">9.756</span><br>kegiatan kipApp tersinkron</div>
 </div>
 
 <div class="card ok" style="margin-top:.8rem"><span class="tag">Berjalan</span> &nbsp;Aplikasi aktif di <b>kinetik.bpssulteng.id</b> sejak Oktober 2026.</div>
-<div class="card warn"><span class="tag p">Perlu tindakan</span> &nbsp;Sinkronisasi berhenti sampai token admin yang baru tersimpan.</div>
+<div class="card warn"><span class="tag p">Perlu tindakan</span> &nbsp;Sinkronisasi berhenti sampai admin kipApp masuk dan token baru tersimpan.</div>
 <div class="card warn"><span class="tag p">Belum</span> &nbsp;Belum ada tim yang memakainya. Tahap berikutnya adalah uji coba.</div>
 
 <!--
-Fakta saat ini. Aplikasi aktif di kinetik.bpssulteng.id sejak Oktober 2026.
-Direktori berisi 109 pegawai, 87 aktif, dalam 25 tim, dengan 9.756 kegiatan kipApp tersinkron.
-Dua hal yang harus disampaikan apa adanya: sinkronisasi berhenti sampai ada token admin baru, dan belum ada tim yang memakainya.
+Saya sampaikan status apa adanya.
+Aplikasi aktif di kinetik titik bpssulteng titik id sejak Oktober 2026. Datanya mencakup delapan puluh tujuh pegawai satuan kerja kita, dua puluh lima tim, dan sembilan ribu tujuh ratus lima puluh enam kegiatan kipApp yang sudah tersinkron.
+Dua hal perlu saya katakan jujur. Pertama, sinkronisasi sedang berhenti sampai admin kipApp masuk dan token baru tersimpan. Kedua, belum ada tim yang memakainya. Tahap berikutnya adalah uji coba.
 -->
 
 ---
@@ -407,9 +517,11 @@ Dua hal yang harus disampaikan apa adanya: sinkronisasi berhenti sampai ada toke
 <p class="small" style="margin-top:1.6rem">Semua butir di atas masih rencana.</p>
 
 <!--
-Empat langkah berikutnya, semuanya rencana.
-Pertama uji coba di dua sampai tiga tim. Kedua, kirim ke kipApp baru kami nyalakan setelah uji langsung berhasil.
-Ketiga, login lokal sebelum SSO baru di Desember 2026. Keempat, pelatihan memakai Buku Pedoman di dalam aplikasi.
+Empat langkah berikutnya. Semuanya masih rencana.
+[click] Pertama, uji coba di dua sampai tiga tim.
+[click] Kedua, fitur kirim ke kipApp baru kami nyalakan setelah uji langsung berhasil.
+[click] Ketiga, login lokal sebagai cadangan, sebelum SSO baru pada Desember 2026. Ini belum dibuat.
+[click] Keempat, pelatihan memakai Buku Pedoman yang ada di dalam aplikasi.
 -->
 
 ---
@@ -421,10 +533,10 @@ Ketiga, login lokal sebelum SSO baru di Desember 2026. Keempat, pelatihan memaka
 <div class="card" v-click><span class="big" style="font-size:1.8rem">3</span> &nbsp;<b>Dukung permohonan ke kantor pusat</b> untuk akses resmi kipApp dan SSO client, agar Kinetik tidak bergantung pada jalur sementara.</div>
 
 <!--
-Tiga permintaan.
-Satu, tentukan tim uji coba, dua sampai tiga tim.
-Dua, dukung ritme mingguan: rencana diisi paling lambat Senin pukul 09.00, dan PJ menyusun rekap.
-Tiga, dukung permohonan akses resmi ke kipApp dan SSO client di kantor pusat, supaya Kinetik tidak bergantung pada jalur sementara.
+Kami meminta tiga hal dari Bapak dan Ibu.
+[click] Satu, tentukan tim uji coba, dua sampai tiga tim.
+[click] Dua, dukung ritme mingguan: rencana diisi paling lambat Senin pukul sembilan pagi, dan PJ menyusun rekap.
+[click] Tiga, dukung permohonan ke kantor pusat untuk akses resmi ke kipApp dan SSO client. Tanpa itu, setelah Desember 2026 setiap orang harus menyalin token sendiri. Dengan itu, Kinetik tetap otomatis.
 -->
 
 ---
@@ -443,6 +555,6 @@ class: text-center
 <p class="small" style="margin-top:1.2rem;line-height:1.35"><b>Sukma Nirmala Dewi, S.Tr.Stat.</b><br>Pranata Komputer Ahli Pertama, Tim Metodologi dan Teknologi Informasi (MTI)<br>BPS Provinsi Sulawesi Tengah · NIP 200001142022012003</p>
 
 <!--
-Kesimpulannya: kipApp tetap catatan resmi, Kinetik membuatnya terlihat oleh pimpinan setiap minggu.
-Terima kasih. Kami siap menjawab pertanyaan, atau memperlihatkan aplikasinya langsung.
+Saya tutup dengan satu kalimat: kipApp tetap catatan resmi, dan Kinetik membuatnya terlihat oleh pimpinan setiap minggu.
+Terima kasih atas perhatian Bapak dan Ibu. Kami siap menjawab pertanyaan, atau memperlihatkan aplikasinya langsung.
 -->
