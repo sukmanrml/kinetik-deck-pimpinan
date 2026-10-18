@@ -15,19 +15,7 @@ export const shots: Record<string, ShotDef> = {
                 "n": 2,
                 "x": 47.5,
                 "y": 26,
-                "text": "Kegiatan dan Capaian terisi: berapa kegiatan minggu itu, dan berapa yang sudah ada capaiannya."
-            },
-            {
-                "n": 3,
-                "x": 61.4,
-                "y": 26,
-                "text": "Terkirim ke atasan: berapa kegiatan yang sudah dikirim ke kipApp."
-            },
-            {
-                "n": 4,
-                "x": 79.5,
-                "y": 30.3,
-                "text": "Status minggu: Belum ditulis, atau Belum ada kegiatan."
+                "text": "Kolom Kegiatan, Capaian terisi, dan Terkirim sama seperti daftar bulan, sekarang per minggu."
             }
         ]
     },
@@ -399,13 +387,7 @@ export const shots: Record<string, ShotDef> = {
                 "n": 3,
                 "x": 52.2,
                 "y": 26,
-                "text": "Berapa RK yang sudah ditulis parafrasenya, dan berapa yang terkunci."
-            },
-            {
-                "n": 4,
-                "x": 82.2,
-                "y": 30.4,
-                "text": "Status minggu."
+                "text": "Kolom RK sudah ditulis dan Terkunci sama seperti daftar bulan, sekarang per minggu."
             }
         ]
     },
