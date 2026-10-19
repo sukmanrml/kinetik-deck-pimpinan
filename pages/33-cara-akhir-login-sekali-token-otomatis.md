@@ -13,6 +13,6 @@ Karena itu kami mencari cara lain, dan inilah cara akhir yang kami pilih. Kami m
 [click] SSO mengesahkan, dan kipApp memberikan token.
 [click] Token tersimpan terenkripsi di Kinetik.
 [click] Kinetik mengambil data seluruh pegawai dari kipApp.
-[click] Saat token expired, Kinetik login ulang sendiri memakai password yang tersimpan. Tidak ada yang perlu copy apa pun.
+[click] Saat token expired, Kinetik login ulang sendiri memakai password yang tersimpan. Tidak ada yang perlu copy apa pun. Kalau login ulang itu gagal, anggota masuk daftar tunggu sinkronisasi dan sinkronisasinya jalan lagi begitu ia masuk ke Kinetik.
 [click] Hasilnya, tidak ada copy-paste token. Password disimpan terenkripsi dan tidak pernah ditampilkan lagi. Dan saat admin kipApp login, token bersama untuk seluruh satuan kerja ikut diperbarui.
 -->
