@@ -153,6 +153,10 @@ src: ./pages/27d-fitur-admin.md
 ---
 
 ---
+src: ./pages/27e-daftar-saklar-fitur.md
+---
+
+---
 src: ./pages/27b-notifikasi-di-aplikasi.md
 ---
 
