@@ -189,6 +189,10 @@ src: ./pages/28-yang-sudah-dikerjakan-kipapp.md
 ---
 
 ---
+src: ./pages/28a-siapa-memegang-apa.md
+---
+
+---
 src: ./pages/29-yang-belum-ada-di-kipapp-angka-kredit-da.md
 ---
 
