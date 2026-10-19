@@ -10,7 +10,7 @@
 </tbody>
 </table>
 
-<div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> lembar Excel pribadi, penyerahan lembar ke PJ, dan pengetikan ulang isi yang sama. <span class="small">Kirim hasil ke kipApp dari Kinetik masih tahap uji.</span></div>
+<div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> lembar Excel pribadi, penyerahan lembar ke PJ, dan pengetikan ulang isi yang sama. <span class="small">Kirim ke atasan bisa langsung dari Kinetik.</span></div>
 
 <!--
 Sekarang prosedur kerja untuk tiap peran, dimulai dari anggota.
@@ -18,5 +18,5 @@ Sekarang prosedur kerja untuk tiap peran, dimulai dari anggota.
 [click] Selama minggu, anggota mencatat sekali, di kipApp atau Kinetik. Yang lain mengikuti lewat sync. Dulu dicatat dua kali.
 [click] Akhir minggu, anggota mengisi target dan capaian berupa angka, uraian, dan link bukti. Dulu diketik sebagai kalimat.
 [click] Menjelang rapat, tidak ada lagi lembar yang diserahkan ke PJ, karena PJ sudah melihat rekapnya.
-[click] Yang dipangkas untuk anggota: lembar Excel pribadi, penyerahan lembar, dan pengetikan ulang. Fitur kirim hasil ke kipApp dari Kinetik masih tahap uji.
+[click] Yang dipangkas untuk anggota: lembar Excel pribadi, penyerahan lembar, dan pengetikan ulang. Kirim ke atasan sekarang bisa dilakukan langsung dari Kinetik, tidak perlu membuka kipApp.
 -->

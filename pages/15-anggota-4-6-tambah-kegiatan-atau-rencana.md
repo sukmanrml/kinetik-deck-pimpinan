@@ -11,5 +11,5 @@ Ini form untuk menambah kegiatan atau rencana. Bentuknya sengaja dibuat mirip fo
 [click] Ketiga, ini yang penting: tanggal di masa depan boleh diisi. Di form kipApp, ini ditolak, jadi di sinilah perencanaan jadi mungkin.
 [click] Keempat, target, satuan, dan capaian berupa angka, jadi bisa dijumlahkan.
 [click] Kelima, bukti dukung berupa link.
-[click] Keenam, simpan. Fitur kirim ke kipApp dari sini masih tahap uji.
+[click] Keenam, simpan. Setelah itu Kinetik mengirimnya ke kipApp pada tanggal mulai, otomatis. Alurnya ada di slide Kinetik ke kipApp.
 -->

@@ -8,7 +8,7 @@
 <tr v-click><td>Senin 05.30</td><td>Sync angka kredit dan predikat SKP</td><td>Angka Kredit Tim tetap terbaru</td></tr>
 <tr v-click><td>Senin 09.00</td><td>Pengingat bagi yang belum punya rencana</td><td>Notifikasi ke anggota dan PJ-nya</td></tr>
 <tr v-click><td>Tiap 10 menit</td><td>Cek token kipApp yang hampir expired</td><td>Admin diberi tahu sebelum sync berhenti</td></tr>
-<tr v-click><td>Tiap jam, 05.10 sampai 18.10</td><td>Kirim rencana yang tanggalnya sudah tiba ke kipApp</td><td>Yang gagal dicoba lagi. Masih tahap uji</td></tr>
+<tr v-click><td>Tiap jam, 05.10 sampai 18.10</td><td>Kirim rencana yang tanggalnya sudah tiba ke kipApp</td><td>Yang gagal dicoba lagi sampai tanggal selesai</td></tr>
 </tbody>
 </table>
 
@@ -21,6 +21,6 @@ Selain yang dikerjakan orang, ada pekerjaan yang berjalan sendiri menurut jadwal
 [click] Tiap Senin jam setengah enam, angka kredit dan predikat SKP disinkronkan. Datanya jarang berubah, jadi seminggu sekali cukup.
 [click] Senin jam sembilan, pengingat dikirim ke anggota yang belum punya rencana, dan ringkasannya ke PJ.
 [click] Tiap sepuluh menit, Kinetik mengecek token kipApp. Kalau hampir expired, admin diberi tahu lebih dulu.
-[click] Tiap jam kerja, rencana yang tanggalnya sudah tiba dikirim ke kipApp. Kalau gagal, dicoba lagi. Bagian ini masih tahap uji.
+[click] Tiap jam kerja, rencana yang tanggalnya sudah tiba dikirim ke kipApp. Kalau gagal, dicoba lagi sampai tanggal selesai. Termasuk membuat SKP triwulan baru bila belum ada.
 [click] Soal cara menjalankannya: hosting kami tidak punya cron biasa, jadi Task Scheduler di panel hosting memanggil perintah schedule run tiap lima menit. Semua sync bergantung pada token kipApp, jadi kalau token expired, sync berhenti sampai ada yang login lagi.
 -->

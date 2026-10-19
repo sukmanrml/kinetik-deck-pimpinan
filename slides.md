@@ -81,6 +81,10 @@ src: ./pages/17-anggota-6-6-isi-capaian.md
 ---
 
 ---
+src: ./pages/16a-dari-kinetik-ke-kipapp.md
+---
+
+---
 src: ./pages/18-pj-1-5-pilih-bulan.md
 ---
 
