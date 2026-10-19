@@ -521,7 +521,7 @@ export const shots: Record<string, ShotDef> = {
         "src": "/shots/skp-saya.png",
         "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
-            {"n": 1, "x": 34.4, "y": 14.8, "text": "SKP Tahunan dengan tiga tahap. Atasan yang menetapkan, di kipApp."},
+            {"n": 1, "x": 34.4, "y": 14.8, "text": "SKP Tahunan dengan tiga tahap. Atasan yang menetapkan, di halaman Persetujuan SKP atau di kipApp."},
             {"n": 2, "x": 77.8, "y": 54, "text": "Status tiap triwulan sama seperti di kipApp: Sedang dibuat, Sedang diperiksa, Dinilai."},
             {"n": 3, "x": 34.8, "y": 68.2, "text": "Triwulan yang belum punya SKP: tombol Buat SKP."}
         ]
@@ -540,6 +540,17 @@ export const shots: Record<string, ShotDef> = {
         "steps": [
             {"n": 1, "x": 36.7, "y": 72.7, "text": "Tambah RK, selama SKP masih Sedang dibuat."},
             {"n": 2, "x": 43.2, "y": 72.7, "text": "Kirim untuk dinilai atasan. Sesudahnya tombol ini menjadi Batalkan pengiriman."}
+        ]
+    },
+    "skp-persetujuan": {
+        "src": "/shots/skp-persetujuan.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 6.7, "y": 50.3, "text": "Menu Persetujuan SKP untuk pimpinan dan atasan."},
+            {"n": 2, "x": 29.5, "y": 10.3, "text": "Hanya SKP yang atasannya Anda dan sedang menunggu."},
+            {"n": 3, "x": 73.6, "y": 18.6, "text": "SKP triwulan dinilai di kipApp, karena butuh nilai tiap RK."},
+            {"n": 4, "x": 75.2, "y": 23.5, "text": "Tetapkan SKP Tahunan, dengan akun kipApp atasan sendiri."},
+            {"n": 5, "x": 80.3, "y": 23.5, "text": "Kembalikan ke pegawai. SKP kembali ke Sedang dibuat."}
         ]
     }
 };

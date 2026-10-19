@@ -10,7 +10,7 @@
 <div v-click class="step"><span class="n">5</span><b>Batal kirim atau hapus</b>"Batalkan kirim" mengembalikan ke langkah 3. "Hapus kegiatan" hanya untuk yang belum terkirim.</div>
 </div>
 
-<div v-click class="card warn" style="margin-top:1.2rem"><b>Aturannya sama dengan kipApp.</b> Setelah SKP triwulan dikirim untuk dinilai, kegiatannya terkunci dan alasannya tampil di detail. Kegiatan di masa depan hanya dikirim pada tanggal mulainya. Atasan menetapkan SKP Tahunan dan menilai SKP triwulan di kipApp. Kinetik membuat SKP triwulan, menambah RK, mengirim dan membatalkan pengiriman SKP atas nama anggota, tetapi tidak menetapkan atau menilai.</div>
+<div v-click class="card warn" style="margin-top:1.2rem"><b>Aturannya sama dengan kipApp.</b> Setelah SKP triwulan dikirim untuk dinilai, kegiatannya terkunci dan alasannya tampil di detail. Kegiatan di masa depan hanya dikirim pada tanggal mulainya. Atasan menetapkan SKP Tahunan dengan akunnya sendiri, di Kinetik atau di kipApp, dan menilai SKP triwulan di kipApp. Kinetik membuat SKP triwulan, menambah RK, serta mengirim dan membatalkan SKP atas nama anggota.</div>
 
 <!--
 Ini alur satu kegiatan dari Kinetik sampai ke atasan di kipApp.
@@ -19,5 +19,5 @@ Ini alur satu kegiatan dari Kinetik sampai ke atasan di kipApp.
 [click] Ketiga, anggota mengisi capaian dan menekan Tandai selesai. Progres seratus persen dikirim ke kipApp.
 [click] Keempat, Kirim ke atasan. Bisa satu per satu atau banyak sekaligus. Setelah ini atasan bisa menilai.
 [click] Kelima, kalau perlu ditarik kembali: Batalkan kirim mengembalikan kegiatan ke langkah tiga, dan Hapus kegiatan menghapusnya juga di kipApp, tetapi hanya untuk yang belum terkirim.
-[click] Aturannya sama dengan kipApp. Begitu SKP triwulan dikirim untuk dinilai, kegiatannya terkunci. SKP Tahunan harus ditetapkan atasan lebih dulu di kipApp. Kinetik bisa membuat SKP triwulan, menambah RK, serta mengirim dan membatalkan pengiriman SKP, tetapi tidak menetapkan atau menilai. Slide berikutnya menunjukkan halamannya. Kirim, batal kirim, dan hapus sudah kami uji langsung pada kegiatan sementara di SKP kami sendiri. Pembuatan SKP triwulan otomatis belum pernah diuji langsung, jadi kami amati di pilot.
+[click] Aturannya sama dengan kipApp. Begitu SKP triwulan dikirim untuk dinilai, kegiatannya terkunci. SKP Tahunan harus ditetapkan atasan lebih dulu di kipApp. Kinetik bisa membuat SKP triwulan, menambah RK, serta mengirim dan membatalkan pengiriman SKP. Atasan menetapkan SKP Tahunan dengan akunnya sendiri, di halaman Persetujuan SKP atau di kipApp, dan menilai triwulan di kipApp. Slide berikutnya menunjukkan halamannya. Kirim, batal kirim, dan hapus sudah kami uji langsung pada kegiatan sementara di SKP kami sendiri. Pembuatan SKP triwulan otomatis belum pernah diuji langsung, jadi kami amati di pilot.
 -->
