@@ -10,7 +10,7 @@ const steps: Array<{ n: number; who: string; title: string; text: string; tool: 
     { n: 4, who: 'Anggota', title: 'SKP triwulan dibuat', text: 'Buat SKP TW, centang RK. Terbuka setelah SKP Tahunan ditetapkan.', tool: 'Kinetik', test: 'belum' },
     { n: 5, who: 'Anggota', title: 'Kegiatan', text: 'Rencana mingguan, kirim ke kipApp, tandai selesai, kirim ke atasan.', tool: 'Kinetik', test: 'teruji' },
     { n: 6, who: 'Anggota', title: 'SKP dikirim untuk dinilai', text: 'SKP Saya, Kirim untuk dinilai. Bisa dibatalkan sebelum dinilai.', tool: 'Kinetik', test: 'teruji' },
-    { n: 7, who: 'Atasan', title: 'Penilaian', text: 'Nilai tiap RK dan perilaku, lalu Dinilai. Halaman di Kinetik siap, belum dinyalakan.', tool: 'Kinetik atau kipApp', test: 'belum' },
+    { n: 7, who: 'Atasan', title: 'Penilaian', text: 'Nilai tiap RK dan perilaku, lalu Dinilai. Halaman di Kinetik belum diuji nilai asli.', tool: 'Kinetik atau kipApp', test: 'belum' },
     { n: 8, who: 'Kinetik', title: 'Angka Kredit', text: 'Dihitung sebagai estimasi dari predikat SKP yang sudah Dinilai.', tool: 'Kinetik', test: null },
 ];
 </script>

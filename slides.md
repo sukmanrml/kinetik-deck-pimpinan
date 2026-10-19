@@ -129,6 +129,10 @@ src: ./pages/22b-pj-tetapkan-skp.md
 ---
 
 ---
+src: ./pages/22c-pj-proyek-rk-kipapp.md
+---
+
+---
 src: ./pages/23-pimpinan-1-4-kepatuhan-rencana.md
 ---
 

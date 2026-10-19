@@ -550,12 +550,12 @@ export const shots: Record<string, ShotDef> = {
             {"n": 2, "x": 35.1, "y": 31.0, "text": "Tiap RK: jumlah kegiatan, yang selesai dan yang terkirim ke kipApp."},
             {"n": 3, "x": 84.8, "y": 28.0, "text": "Capaian dibanding target, dengan satuan."},
             {"n": 4, "x": 35.3, "y": 33.3, "text": "Catatan capaian yang ditulis pegawai."},
-            {"n": 5, "x": 79.2, "y": 22.2, "text": "Menilai masih di kipApp. Halaman Nilai di Kinetik sudah ada tetapi belum dinyalakan."}
+            {"n": 5, "x": 79.2, "y": 22.2, "text": "Nilai membuka halaman penilaian di Kinetik."}
         ]
     },
     "skp-nilai": {
         "src": "/shots/skp-nilai.png",
-        "url": "kinetik.bpssulteng.id (contoh data, belum dinyalakan)",
+        "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
             {"n": 1, "x": 43.8, "y": 20.7, "text": "Bahan penilaian dari Kinetik ada di halaman yang sama dengan form nilai."},
             {"n": 2, "x": 81.4, "y": 54.4, "text": "Nilai 0 sampai 100 untuk tiap RK."},
@@ -563,6 +563,16 @@ export const shots: Record<string, ShotDef> = {
             {"n": 4, "x": 54.1, "y": 59.1, "text": "Umpan balik, boleh dikosongkan."},
             {"n": 5, "x": 81.4, "y": 61.9, "text": "Simpan: nilai langsung masuk ke kipApp dengan akun atasan."},
             {"n": 6, "x": 36.6, "y": 98.3, "text": "Tujuh perilaku BerAKHLAK dinilai dengan cara yang sama, lalu Selesai menilai."}
+        ]
+    },
+    "proyek-kipapp": {
+        "src": "/shots/proyek-kipapp.png",
+        "url": "kinetik.bpssulteng.id (contoh data, belum dinyalakan)",
+        "steps": [
+            {"n": 1, "x": 31.4, "y": 20.9, "text": "Pilih tim dulu. Daftar RK Ketua dimuat dari kipApp."},
+            {"n": 2, "x": 40, "y": 36.7, "text": "RK Ketua tempat proyek digantung di kipApp."},
+            {"n": 3, "x": 65.6, "y": 36.9, "text": "Belum ada RK Ketua? Buat dari sini, dengan memilih IKI JPT."},
+            {"n": 4, "x": 66.9, "y": 92.7, "text": "Simpan: proyek dibuat di Kinetik dan di kipApp dengan akun PJ."}
         ]
     },
     "skp-pj": {

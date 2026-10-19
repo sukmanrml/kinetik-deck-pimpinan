@@ -10,5 +10,5 @@ Selain memantau, pimpinan sebagai atasan juga punya halaman Persetujuan SKP. Dat
 [click] Tiap RK menunjukkan jumlah kegiatan, berapa yang selesai, dan berapa yang sudah terkirim ke kipApp.
 [click] Di sebelahnya capaian dibanding target, lengkap dengan satuan.
 [click] Di bawah nama RK ada catatan capaian yang ditulis pegawai. Semua ini dari Kinetik, bukan dari kipApp.
-[click] Menilai masih lewat kipApp. Halaman Nilai di Kinetik sudah dibuat, tetapi belum dinyalakan. SKP Tahunan bisa ditetapkan dengan satu tombol memakai akun kipApp pimpinan, atau dikembalikan ke pegawai. Keduanya mengikuti kode kipApp dan belum kami uji langsung, karena semua SKP Tahunan kantor ini sudah ditetapkan.
+[click] Tombol Nilai membuka halaman penilaian di Kinetik, di slide berikut. SKP Tahunan bisa ditetapkan dengan satu tombol memakai akun kipApp pimpinan, atau dikembalikan ke pegawai. Keduanya mengikuti kode kipApp dan belum kami uji langsung, karena semua SKP Tahunan kantor ini sudah ditetapkan.
 -->
