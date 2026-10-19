@@ -1,4 +1,4 @@
-# PJ (1/5): pilih bulan
+# PJ (1/6): pilih bulan
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 

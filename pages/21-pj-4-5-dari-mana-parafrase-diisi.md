@@ -1,4 +1,4 @@
-# PJ (4/5): dari mana parafrase diisi
+# PJ (4/6): dari mana parafrase diisi
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span>
 

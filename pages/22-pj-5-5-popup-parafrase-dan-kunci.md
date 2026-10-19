@@ -1,4 +1,4 @@
-# PJ (5/5): popup parafrase dan kunci
+# PJ (5/6): popup parafrase dan kunci
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 

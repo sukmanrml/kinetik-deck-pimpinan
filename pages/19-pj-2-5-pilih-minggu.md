@@ -1,4 +1,4 @@
-# PJ (2/5): pilih minggu
+# PJ (2/6): pilih minggu
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span>
 

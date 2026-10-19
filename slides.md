@@ -121,6 +121,14 @@ src: ./pages/22-pj-5-5-popup-parafrase-dan-kunci.md
 ---
 
 ---
+src: ./pages/22a-pj-persetujuan-skp.md
+---
+
+---
+src: ./pages/22b-pj-tetapkan-skp.md
+---
+
+---
 src: ./pages/23-pimpinan-1-4-kepatuhan-rencana.md
 ---
 

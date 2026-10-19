@@ -6,7 +6,7 @@ type Tool = 'kipApp' | 'Kinetik' | 'Kinetik atau kipApp';
 const steps: Array<{ n: number; who: string; title: string; text: string; tool: Tool; test: 'teruji' | 'belum' | null }> = [
     { n: 1, who: 'Tim kerja dan admin', title: 'Awal tahun', text: 'PK, IKU, RK Ketua, Proyek, RK Anggota dibuat. Proyek mengelompokkan RK Anggota per tim.', tool: 'kipApp', test: null },
     { n: 2, who: 'Anggota', title: 'SKP Tahunan dikirim', text: 'Pilih RK Anggota, isi IKI, lalu Kirim untuk ditetapkan.', tool: 'Kinetik atau kipApp', test: 'belum' },
-    { n: 3, who: 'Atasan', title: 'Penetapan', text: 'Notifikasi, lalu Tetapkan atau Kembalikan di Persetujuan SKP.', tool: 'Kinetik atau kipApp', test: 'belum' },
+    { n: 3, who: 'Atasan', title: 'Penetapan', text: 'Atasan: PJ untuk anggota, pimpinan untuk PJ. Notifikasi, lalu Tetapkan atau Kembalikan di Persetujuan SKP.', tool: 'Kinetik atau kipApp', test: 'belum' },
     { n: 4, who: 'Anggota', title: 'SKP triwulan dibuat', text: 'Buat SKP TW, centang RK. Terbuka setelah SKP Tahunan ditetapkan.', tool: 'Kinetik', test: 'belum' },
     { n: 5, who: 'Anggota', title: 'Kegiatan', text: 'Rencana mingguan, kirim ke kipApp, tandai selesai, kirim ke atasan.', tool: 'Kinetik', test: 'teruji' },
     { n: 6, who: 'Anggota', title: 'SKP dikirim untuk dinilai', text: 'SKP Saya, Kirim untuk dinilai. Bisa dibatalkan sebelum dinilai.', tool: 'Kinetik', test: 'teruji' },
