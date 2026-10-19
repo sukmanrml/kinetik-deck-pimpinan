@@ -85,6 +85,18 @@ src: ./pages/16a-dari-kinetik-ke-kipapp.md
 ---
 
 ---
+src: ./pages/17a-anggota-skp-saya.md
+---
+
+---
+src: ./pages/17b-anggota-buat-skp-triwulan.md
+---
+
+---
+src: ./pages/17c-anggota-kirim-skp.md
+---
+
+---
 src: ./pages/18-pj-1-5-pilih-bulan.md
 ---
 

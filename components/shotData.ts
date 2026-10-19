@@ -516,5 +516,30 @@ export const shots: Record<string, ShotDef> = {
             {"n": 2, "x": 84, "y": 40, "text": "File bertipe script (sc...) ini potongan bundle JavaScript, isi aplikasi yang sebenarnya."},
             {"n": 3, "x": 84, "y": 97, "text": "69 request dan 4,2 MB hanya untuk membuka halaman login."}
         ]
+    },
+    "skp-saya": {
+        "src": "/shots/skp-saya.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 34.4, "y": 14.8, "text": "SKP Tahunan dengan tiga tahap. Atasan yang menetapkan, di kipApp."},
+            {"n": 2, "x": 77.8, "y": 54, "text": "Status tiap triwulan sama seperti di kipApp: Sedang dibuat, Sedang diperiksa, Dinilai."},
+            {"n": 3, "x": 34.8, "y": 68.2, "text": "Triwulan yang belum punya SKP: tombol Buat SKP."}
+        ]
+    },
+    "skp-buat": {
+        "src": "/shots/skp-buat.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 38, "y": 45.9, "text": "Centang RK SKP Tahunan yang masuk ke triwulan ini."},
+            {"n": 2, "x": 59.7, "y": 61.1, "text": "Buat SKP. Di kipApp SKP triwulannya langsung ada."}
+        ]
+    },
+    "skp-kirim": {
+        "src": "/shots/skp-kirim.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 36.7, "y": 72.7, "text": "Tambah RK, selama SKP masih Sedang dibuat."},
+            {"n": 2, "x": 43.2, "y": 72.7, "text": "Kirim untuk dinilai atasan. Sesudahnya tombol ini menjadi Batalkan pengiriman."}
+        ]
     }
 };
