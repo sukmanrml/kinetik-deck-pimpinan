@@ -498,7 +498,7 @@ export const shots: Record<string, ShotDef> = {
                 "n": 4,
                 "x": 37.2,
                 "y": 22.6,
-                "text": "Sinkronkan data saya: ambil kegiatan terbaru dari kipApp."
+                "text": "Sinkronkan data saya: ambil kegiatan terbaru dari kipApp ke Kinetik. Arah sebaliknya, Kinetik ke kipApp, berjalan sendiri tiap jam kerja atau lewat tombol Kirim ke kipApp di detail kegiatan."
             },
             {
                 "n": 5,

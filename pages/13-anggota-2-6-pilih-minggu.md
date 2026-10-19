@@ -5,7 +5,7 @@
 <Shot id="member-weeks" :clicks="$clicks" />
 
 <!--
-Setelah memilih bulan, anggota melihat daftar minggunya. Ini bulan September 2026, data nyata.
+Setelah memilih bulan, anggota melihat daftar minggunya. Ini bulan September 2026.
 [click] Pertama, anggota memilih bulan, lalu minggunya. Tampilannya daftar dulu, jadi tidak perlu membuka banyak lembar.
 [click] Kedua, kolom-kolomnya sama seperti daftar bulan tadi, hanya sekarang per minggu.
 -->

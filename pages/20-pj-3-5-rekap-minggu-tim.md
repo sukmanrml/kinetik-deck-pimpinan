@@ -5,7 +5,7 @@
 <Shot id="pj-week-detail" :clicks="$clicks" />
 
 <!--
-Sekarang sisi PJ. Ini rekap satu minggu untuk satu tim, dengan data nyata tim MTI.
+Sekarang sisi PJ. Ini rekap satu minggu untuk satu tim, dengan data tim MTI.
 [click] Pertama, PJ memilih tim yang ia pimpin.
 [click] Kedua, kegiatan semua anggota ada dalam satu tabel. Tidak ada lagi lembar Excel yang harus dikumpulkan.
 [click] Ketiga, status tiap kegiatan, misalnya Terkirim ke atasan.

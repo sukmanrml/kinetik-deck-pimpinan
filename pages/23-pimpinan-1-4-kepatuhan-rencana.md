@@ -5,7 +5,7 @@
 <Shot id="head-compliance" :clicks="$clicks" />
 
 <!--
-Sekarang sisi pimpinan. Ini Kepatuhan Rencana, dengan data nyata semua tim.
+Sekarang sisi pimpinan. Ini Kepatuhan Rencana, dengan data semua tim.
 [click] Pertama, aturannya jelas: batas pengisian rencana adalah Senin pukul sembilan pagi.
 [click] Kedua, kartu Minggu ini menunjukkan berapa persen anggota yang sudah membuat rencana. Saat ini masih nol, karena belum ada tim yang memakai ritual ini.
 [click] Ketiga, kartu Triwulan ini menunjukkan berapa persen rencana minggu lalu yang berakhir selesai.

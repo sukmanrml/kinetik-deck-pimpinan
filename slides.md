@@ -117,6 +117,14 @@ src: ./pages/25-pimpinan-3-4-angka-kredit-tim.md
 ---
 
 ---
+src: ./pages/25a-angka-kredit-cara-hitung.md
+---
+
+---
+src: ./pages/25b-angka-kredit-batasan.md
+---
+
+---
 src: ./pages/26-pimpinan-4-4-kertas-kerja-fra.md
 ---
 
@@ -173,7 +181,7 @@ src: ./pages/37-kekhawatiran-sso-baru-menghentikan-cara.md
 ---
 
 ---
-src: ./pages/38-tantangan-3-data-nyata-tidak-rapi.md
+src: ./pages/38-tantangan-3-data-kipapp-tidak-rapi.md
 ---
 
 ---

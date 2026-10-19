@@ -1,3 +1,12 @@
+watch(() => props.clicks, (now) => {
+    // Forward or back: zoom to the pin of the current click. Going back keeps the zoom and glides to the earlier pin.
+    const step = shot.value.steps.find((s) => s.n === now);
+    if (reduced || !step) { zoomed.value = false; clearTimeout(timer); return; }
+    target.value = { x: step.x, y: step.y };
+    zoomed.value = true;
+    clearTimeout(timer);
+    timer = setTimeout(() => { zoomed.value = false; }, HOLD_MS);
+});
 <script setup lang="ts">
 // Screenshot UI dengan penanda bernomor. Penanda dan keterangan muncul satu per satu sesuai klik.
 import { computed, onBeforeUnmount, ref, watch } from 'vue';

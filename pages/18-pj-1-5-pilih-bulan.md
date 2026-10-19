@@ -5,7 +5,7 @@
 <Shot id="pj-months" :clicks="$clicks" />
 
 <!--
-Sisi PJ juga mulai dari daftar bulan, sama seperti anggota. Ini halaman Rekap Tim untuk tim MTI, data nyata.
+Sisi PJ juga mulai dari daftar bulan, sama seperti anggota. Ini halaman Rekap Tim untuk tim MTI, dengan datanya sendiri.
 [click] Pertama, PJ memilih tim yang ia pimpin.
 [click] Kedua, kolom Kegiatan menunjukkan jumlah kegiatan seluruh anggota tim di tiap bulan.
 [click] Ketiga, RK sudah ditulis dan Terkunci menunjukkan sejauh mana rekap bulan itu sudah dikerjakan.

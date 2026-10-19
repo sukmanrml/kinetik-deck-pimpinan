@@ -5,7 +5,7 @@
 <Shot id="member-unsent-week" :clicks="$clicks" />
 
 <!--
-Setelah disimpan, kegiatan langsung muncul di halaman minggu itu. Ini halaman minggu 28 September sampai 4 Oktober, data nyata.
+Setelah disimpan, kegiatan langsung muncul di halaman minggu itu. Ini halaman minggu 28 September sampai 4 Oktober.
 [click] Pertama, kegiatan yang baru ditambah langsung muncul di tabel Rencana minggu ini.
 [click] Kedua, tiap baris menunjukkan RK dan tanggalnya, jadi mudah dicek.
 [click] Ketiga, status tiap kegiatan. Contohnya Selesai, belum dikirim, artinya progresnya sudah penuh tapi belum dikirim ke atasan.

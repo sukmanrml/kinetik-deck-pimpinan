@@ -5,7 +5,7 @@
 <Shot id="member-months" :clicks="$clicks" />
 
 <!--
-Alur anggota mulai dari sini: Rekap Mingguan, dan yang pertama tampil adalah daftar bulan. Data nyata satu anggota.
+Alur anggota mulai dari sini: Rekap Mingguan, dan yang pertama tampil adalah daftar bulan. Contohnya data satu anggota.
 [click] Pertama, pilih tahunnya.
 [click] Kedua, kolom Kegiatan menunjukkan jumlah kegiatan anggota itu di tiap bulan.
 [click] Ketiga, Capaian terisi menunjukkan berapa kegiatan yang sudah diisi capaiannya.

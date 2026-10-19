@@ -5,7 +5,7 @@
 <Shot id="org" :clicks="$clicks" />
 
 <!--
-Terakhir, Struktur Organisasi: pohon dari satker, tim, ketua, dan anggota. Ini data nyata kita.
+Terakhir, Struktur Organisasi: pohon dari satker, tim, ketua, dan anggota. Ini data satker kita sendiri.
 [click] Pertama, kolom pencarian untuk mencari nama pegawai atau tim.
 [click] Kedua, nama satker dan kepala selalu pinned di paling atas, seperti pohon organisasi di Workday.
 [click] Ketiga, tim yang sedang dilihat ikut pinned di bawahnya, sambil daftar anggota digulir.
