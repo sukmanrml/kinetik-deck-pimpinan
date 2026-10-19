@@ -1,22 +1,20 @@
-# SOP anggota: catat sekali
+# SOP tiga peran: dulu dan sekarang
 
 <table class="cmp three">
-<thead><tr><th style="width:20%">Kapan</th><th style="width:38%">Cara lama</th><th>Cara baru</th></tr></thead>
+<thead><tr><th style="width:13%">Peran</th><th style="width:36%">Cara lama</th><th>Cara baru</th></tr></thead>
 <tbody>
-<tr v-click><td>Awal minggu, paling lambat Senin pukul 09.00</td><td>Menyiapkan rencana di lembar Excel sendiri</td><td>Mengisi rencana minggu ini di Rekap Mingguan: pilih RK, tulis uraian dan tanggal</td></tr>
-<tr v-click><td>Selama minggu</td><td>Mencatat kegiatan di kipApp, lalu mengetik lagi di Excel</td><td>Mencatat sekali di kipApp atau Kinetik. Yang lain mengikuti lewat sync</td></tr>
-<tr v-click><td>Akhir minggu</td><td>Mengetik target dan realisasi sebagai kalimat</td><td>Mengisi target dan capaian berupa angka, uraian, dan link bukti, lalu menandai selesai</td></tr>
-<tr v-click><td>Menjelang rapat</td><td>Menyerahkan lembar kepada PJ</td><td>Tidak menyerahkan apa pun. PJ sudah melihat rekapnya</td></tr>
+<tr v-click><td><b>Anggota</b></td><td>Menyiapkan rencana di Excel sendiri, mencatat kegiatan di kipApp lalu mengetik lagi di Excel, mengetik target dan realisasi sebagai kalimat, menyerahkan lembar ke PJ</td><td>Mengisi rencana Senin pukul 09.00 di Rekap Mingguan, mencatat sekali di kipApp atau Kinetik, mengisi target dan capaian berupa angka, uraian dan link bukti. Tidak menyerahkan apa pun</td></tr>
+<tr v-click><td><b>PJ</b></td><td>Menagih rencana satu per satu, menerima lembar anggota, copy ke lembar rekap tim dan menghitung manual, menulis paragraf rekap di Excel</td><td>Membuka Kepatuhan Rencana dan Rekap Mingguan tim, memeriksa angka per RK, menulis satu parafrase per RK, mengisi target dan capaian RK, lalu mengunci</td></tr>
+<tr v-click><td><b>Pimpinan</b></td><td>Menunggu staf menyusun bahan, membaca Excel tiap tim, meminta PJ memeriksa lewat pesan, menunggu bahan FRA</td><td>Membuka "Perlu perhatian" dan rekap per minggu, bulan atau triwulan, menulis Catatan Pimpinan (PJ dapat notifikasi), membuka Triwulanan (FRA) yang tersusun dari rekap bulanan</td></tr>
 </tbody>
 </table>
 
-<div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> lembar Excel pribadi, penyerahan lembar ke PJ, dan pengetikan ulang isi yang sama. <span class="small">Kirim ke atasan bisa langsung dari Kinetik.</span></div>
+<div v-click class="card ok" style="margin-top:.8rem"><b>Dipangkas:</b> lembar Excel pribadi dan penyerahannya, menagih satu per satu, copy dan hitung manual, menunggu bahan disusun. <b>Tetap oleh orangnya:</b> PJ menilai isi dan menulis parafrase, pimpinan membaca dan menindaklanjuti.</div>
 
 <!--
-Sekarang prosedur kerja untuk tiap peran, dimulai dari anggota.
-[click] Awal minggu, paling lambat Senin pukul sembilan pagi, anggota mengisi rencana minggu ini di Rekap Mingguan. Dulu rencana ini disiapkan di lembar Excel sendiri.
-[click] Selama minggu, anggota mencatat sekali, di kipApp atau Kinetik. Yang lain mengikuti lewat sync. Dulu dicatat dua kali.
-[click] Akhir minggu, anggota mengisi target dan capaian berupa angka, uraian, dan link bukti. Dulu diketik sebagai kalimat.
-[click] Menjelang rapat, tidak ada lagi lembar yang diserahkan ke PJ, karena PJ sudah melihat rekapnya.
-[click] Yang dipangkas untuk anggota: lembar Excel pribadi, penyerahan lembar, dan pengetikan ulang. Kirim ke atasan sekarang bisa dilakukan langsung dari Kinetik, tidak perlu membuka kipApp.
+Prosedur kerja tiga peran dalam satu tabel.
+[click] Anggota. Dulu rencana disiapkan di Excel sendiri, kegiatan dicatat dua kali, target dan realisasi diketik sebagai kalimat, lalu lembar diserahkan ke PJ. Sekarang rencana diisi paling lambat Senin pukul sembilan di Rekap Mingguan, kegiatan dicatat sekali, target dan capaian berupa angka dengan uraian dan link bukti. Menjelang rapat tidak ada yang diserahkan karena PJ sudah melihat rekapnya.
+[click] PJ. Dulu menagih satu per satu, menerima lembar, copy dan menghitung manual, lalu menulis paragraf di Excel. Sekarang PJ membuka Kepatuhan Rencana, memeriksa angka per RK, menulis satu parafrase untuk tiap RK, mengisi target dan capaian RK, lalu mengunci.
+[click] Pimpinan. Dulu menunggu staf menyusun bahan dan membaca Excel tiap tim. Sekarang membuka panel Perlu perhatian dan rekap, menulis Catatan Pimpinan, dan membuka rekap FRA yang tersusun dari rekap bulanan. Kirim ke atasan bisa langsung dari Kinetik.
+[click] Yang dipangkas: lembar pribadi, penagihan, copy dan hitung manual, serta menunggu bahan. Yang tetap oleh orangnya adalah yang memang perlu penilaian.
 -->

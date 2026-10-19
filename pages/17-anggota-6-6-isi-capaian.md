@@ -1,4 +1,4 @@
-# Anggota (6/6): isi capaian
+# Anggota (5/5): isi capaian
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span><span v-click="5"></span><span v-click="6"></span><span v-click="7"></span>
 

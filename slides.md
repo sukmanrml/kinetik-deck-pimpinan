@@ -29,23 +29,11 @@ src: ./pages/04-mengapa-tidak-cukup-excel-atau-kipapp-sa.md
 ---
 
 ---
-src: ./pages/05-cara-lama-excel-manual.md
----
-
----
 src: ./pages/06-cara-baru-sekali-catat-langsung-terpanta.md
 ---
 
 ---
 src: ./pages/07-sop-anggota-catat-sekali.md
----
-
----
-src: ./pages/08-sop-pj-memeriksa-bukan-copy.md
----
-
----
-src: ./pages/09-sop-pimpinan-membaca-dan-menindaklanjuti.md
 ---
 
 ---
@@ -58,10 +46,6 @@ src: ./pages/11-ritual-baru-tiap-senin-pagi.md
 
 ---
 src: ./pages/12-anggota-1-6-pilih-bulan.md
----
-
----
-src: ./pages/13-anggota-2-6-pilih-minggu.md
 ---
 
 ---
@@ -109,10 +93,6 @@ src: ./pages/18-pj-1-5-pilih-bulan.md
 ---
 
 ---
-src: ./pages/19-pj-2-5-pilih-minggu.md
----
-
----
 src: ./pages/20-pj-3-5-rekap-minggu-tim.md
 ---
 
@@ -122,14 +102,6 @@ src: ./pages/21-pj-4-5-dari-mana-parafrase-diisi.md
 
 ---
 src: ./pages/22-pj-5-5-popup-parafrase-dan-kunci.md
----
-
----
-src: ./pages/22a-pj-persetujuan-skp.md
----
-
----
-src: ./pages/22b-pj-tetapkan-skp.md
 ---
 
 ---
@@ -150,10 +122,6 @@ src: ./pages/25-pimpinan-3-4-angka-kredit-tim.md
 
 ---
 src: ./pages/25a-angka-kredit-cara-hitung.md
----
-
----
-src: ./pages/25b-angka-kredit-batasan.md
 ---
 
 ---
@@ -197,10 +165,6 @@ src: ./pages/28a-siapa-memegang-apa.md
 ---
 
 ---
-src: ./pages/29-yang-belum-ada-di-kipapp-angka-kredit-da.md
----
-
----
 src: ./pages/30-cara-kami-menemukan-api-kipapp-devtools.md
 ---
 
@@ -229,15 +193,7 @@ src: ./pages/36-tantangan-2-jalur-resmi-butuh-domain-bps.md
 ---
 
 ---
-src: ./pages/37-kekhawatiran-sso-baru-menghentikan-cara.md
----
-
----
 src: ./pages/38-tantangan-3-data-kipapp-tidak-rapi.md
----
-
----
-src: ./pages/39-tantangan-4-menjaga-data-resmi.md
 ---
 
 ---

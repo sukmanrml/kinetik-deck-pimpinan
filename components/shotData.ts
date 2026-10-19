@@ -550,7 +550,8 @@ export const shots: Record<string, ShotDef> = {
             {"n": 2, "x": 35.1, "y": 31.0, "text": "Tiap RK: jumlah kegiatan, yang selesai dan yang terkirim ke kipApp."},
             {"n": 3, "x": 84.8, "y": 28.0, "text": "Capaian dibanding target, dengan satuan."},
             {"n": 4, "x": 35.3, "y": 33.3, "text": "Catatan capaian yang ditulis pegawai."},
-            {"n": 5, "x": 79.2, "y": 22.2, "text": "Nilai membuka halaman penilaian di Kinetik."}
+            {"n": 5, "x": 79.2, "y": 22.2, "text": "Nilai membuka halaman penilaian di Kinetik."},
+            {"n": 6, "x": 91.8, "y": 23.3, "text": "Tetapkan atau Kembalikan: Kinetik bertanya dulu, lalu bekerja dengan akun kipApp atasan sendiri. Pegawai mendapat notifikasi."}
         ]
     },
     "skp-nilai": {

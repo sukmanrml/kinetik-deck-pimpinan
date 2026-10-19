@@ -1,4 +1,4 @@
-# Anggota (5/6): setelah kegiatan ditambah
+# Anggota (4/5): setelah kegiatan ditambah
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 
