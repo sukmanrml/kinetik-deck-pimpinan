@@ -10,7 +10,7 @@
 <div v-click class="step"><span class="n">5</span><b>Batal kirim atau hapus</b>"Batalkan kirim" mengembalikan ke langkah 3. "Hapus kegiatan" hanya untuk yang belum terkirim.</div>
 </div>
 
-<div v-click class="card warn" style="margin-top:1.2rem"><b>Aturannya sama dengan kipApp.</b> Setelah SKP triwulan dikirim untuk dinilai, kegiatannya terkunci dan alasannya tampil di detail. Kegiatan di masa depan hanya dikirim pada tanggal mulainya. Atasan menetapkan SKP Tahunan dengan akunnya sendiri, di Kinetik atau di kipApp, dan menilai SKP triwulan di kipApp. Kinetik membuat SKP triwulan, menambah RK, serta mengirim dan membatalkan SKP atas nama anggota.</div>
+<div v-click class="card warn" style="margin-top:.9rem;font-size:.82rem;line-height:1.3"><b>Aturannya sama dengan kipApp.</b> Setelah SKP triwulan dikirim untuk dinilai, kegiatannya terkunci dan alasannya tampil di detail. Kegiatan di masa depan hanya dikirim pada tanggal mulainya. Atasan menetapkan SKP Tahunan dengan akunnya sendiri dan menilai triwulan di kipApp. Kinetik membuat SKP triwulan, menambah RK, dan mengirim atau membatalkan SKP atas nama anggota.</div>
 
 <!--
 Ini alur satu kegiatan dari Kinetik sampai ke atasan di kipApp.

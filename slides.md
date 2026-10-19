@@ -85,6 +85,10 @@ src: ./pages/16a-dari-kinetik-ke-kipapp.md
 ---
 
 ---
+src: ./pages/26b-alur-skp-dari-awal-tahun.md
+---
+
+---
 src: ./pages/17a-anggota-skp-saya.md
 ---
 
@@ -150,6 +154,10 @@ src: ./pages/27-semua-peran-struktur-organisasi.md
 
 ---
 src: ./pages/27a-jadwal-otomatis-scheduler.md
+---
+
+---
+src: ./pages/27c-simulasi-sinkronisasi-anggota.md
 ---
 
 ---

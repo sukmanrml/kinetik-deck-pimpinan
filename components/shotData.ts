@@ -56,7 +56,7 @@ export const shots: Record<string, ShotDef> = {
                 "n": 6,
                 "x": 58.3,
                 "y": 86,
-                "text": "Simpan. Kirim ke kipApp masih tahap uji."
+                "text": "Simpan. Kinetik mengirimnya ke kipApp pada tanggal mulai, otomatis atau lewat tombol Kirim ke kipApp."
             }
         ]
     },

@@ -3,8 +3,8 @@
 <table class="cmp three">
 <thead><tr><th style="width:24%">Kapan (WITA)</th><th style="width:34%">Pekerjaan</th><th>Hasilnya</th></tr></thead>
 <tbody>
-<tr v-click><td>Harian 04.30 sampai 05.00</td><td>Sync struktur, verifikasi satker, RK, lalu kegiatan harian dari kipApp</td><td>Data tim dan kegiatan sudah baru sebelum jam kerja</td></tr>
-<tr v-click><td>Harian 05.20</td><td>Setiap anggota menyinkronkan data sendiri lewat antrean, dengan sesi kipApp-nya. SSO mati: dicoba lagi tiap 30 menit</td><td>Tidak bergantung pada satu token admin</td></tr>
+<tr v-click><td>Harian 04.30 sampai 05.00</td><td>Sync struktur, satker, RK, lalu kegiatan harian</td><td>Data tim dan kegiatan sudah baru sebelum jam kerja</td></tr>
+<tr v-click><td>Harian 05.20</td><td>Tiap anggota menyinkronkan data sendiri lewat antrean. SSO mati: dicoba lagi tiap 30 menit</td><td>Tidak bergantung pada satu token admin</td></tr>
 <tr v-click><td>Harian 06.00</td><td>RTL triwulan lalu dibuat jadi rencana</td><td>Rencana awal triwulan terisi sendiri</td></tr>
 <tr v-click><td>Senin 05.30</td><td>Sync angka kredit dan predikat SKP</td><td>Angka Kredit Tim tetap terbaru</td></tr>
 <tr v-click><td>Senin 09.00</td><td>Pengingat bagi yang belum punya rencana</td><td>Notifikasi ke anggota dan PJ-nya</td></tr>
@@ -13,7 +13,7 @@
 </tbody>
 </table>
 
-<div v-click class="card" style="margin-top:.6rem;font-size:.82rem;line-height:1.3"><b>Cara menjalankannya:</b> Task Scheduler di panel hosting memanggil <code>schedule:run</code> tiap 5 menit, dan antrean dijalankan dari situ. <b>Sesi kipApp anggota berakhir?</b> Kinetik memperbaruinya dengan kata sandi SSO yang tersimpan. Kalau tidak bisa (kata sandi ditolak, akun OTP), anggota masuk daftar tunggu dan diberi tahu sekali. Begitu ia masuk lagi ke Kinetik, sinkronisasinya langsung jalan.</div>
+<div v-click class="card" style="margin-top:.4rem;font-size:.8rem;line-height:1.25;padding:.5rem .9rem"><b>Cara menjalankannya:</b> Task Scheduler hosting memanggil <code>schedule:run</code> tiap 5 menit, antrean dijalankan dari situ. Sesi kipApp berakhir: diperbarui dengan kata sandi tersimpan. Gagal: masuk daftar tunggu, diberi tahu sekali, jalan lagi saat ia masuk.</div>
 
 <!--
 Selain yang dikerjakan orang, ada pekerjaan yang berjalan sendiri menurut jadwal. Semua jam di sini WITA.
