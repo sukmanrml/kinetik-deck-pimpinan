@@ -5,7 +5,7 @@
 <Shot id="proyek-kipapp" :clicks="$clicks" />
 
 <!--
-Proyek dan RK Anggota yang dibuat PJ di Kinetik bisa dibuat juga di kipApp, dengan akun PJ sendiri. Fitur ini sudah dibuat tetapi belum dinyalakan. Datanya contoh.
+Proyek dan RK Anggota yang dibuat PJ di Kinetik bisa dibuat juga di kipApp, dengan akun PJ sendiri. Fitur ini sudah menyala, dan admin bisa mematikannya dari menu Fitur. Datanya contoh.
 [click] Setelah memilih tim, Kinetik memuat daftar RK Ketua tim itu dari kipApp.
 [click] Proyek digantung di RK Ketua yang dipilih, seperti di kipApp sendiri.
 [click] Belum ada RK Ketua? PJ membuatnya dari sini dengan memilih IKI JPT. Ketua RK adalah ketua tim.

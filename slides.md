@@ -177,6 +177,10 @@ src: ./pages/27c-simulasi-sinkronisasi-anggota.md
 ---
 
 ---
+src: ./pages/27d-fitur-admin.md
+---
+
+---
 src: ./pages/27b-notifikasi-di-aplikasi.md
 ---
 

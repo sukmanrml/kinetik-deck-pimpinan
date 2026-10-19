@@ -567,12 +567,21 @@ export const shots: Record<string, ShotDef> = {
     },
     "proyek-kipapp": {
         "src": "/shots/proyek-kipapp.png",
-        "url": "kinetik.bpssulteng.id (contoh data, belum dinyalakan)",
+        "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
             {"n": 1, "x": 31.4, "y": 20.9, "text": "Pilih tim dulu. Daftar RK Ketua dimuat dari kipApp."},
             {"n": 2, "x": 40, "y": 36.7, "text": "RK Ketua tempat proyek digantung di kipApp."},
             {"n": 3, "x": 65.6, "y": 36.9, "text": "Belum ada RK Ketua? Buat dari sini, dengan memilih IKI JPT."},
             {"n": 4, "x": 66.9, "y": 92.7, "text": "Simpan: proyek dibuat di Kinetik dan di kipApp dengan akun PJ."}
+        ]
+    },
+    "fitur": {
+        "src": "/shots/fitur.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 58.5, "y": 20.6, "text": "Satu baris per fitur kipApp, dengan status Menyala atau Mati."},
+            {"n": 2, "x": 57.2, "y": 36.9, "text": "Tanda Belum diuji langsung untuk fitur yang menulis data resmi."},
+            {"n": 3, "x": 88.6, "y": 29.3, "text": "Satu tombol menyalakan atau mematikan, berlaku segera untuk semua pengguna."}
         ]
     },
     "skp-pj": {
