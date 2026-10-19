@@ -157,6 +157,10 @@ src: ./pages/26a-pimpinan-persetujuan-skp.md
 ---
 
 ---
+src: ./pages/26c-pimpinan-nilai-skp.md
+---
+
+---
 src: ./pages/27-semua-peran-struktur-organisasi.md
 ---
 

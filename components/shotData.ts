@@ -546,11 +546,23 @@ export const shots: Record<string, ShotDef> = {
         "src": "/shots/skp-persetujuan.png",
         "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
-            {"n": 1, "x": 6.7, "y": 50.3, "text": "Menu Persetujuan SKP. Untuk pimpinan, atasan para PJ."},
-            {"n": 2, "x": 29.5, "y": 10.3, "text": "Hanya SKP yang atasannya Anda dan sedang menunggu."},
-            {"n": 3, "x": 73.6, "y": 18.6, "text": "SKP triwulan dinilai di kipApp, karena butuh nilai tiap RK."},
-            {"n": 4, "x": 75.2, "y": 23.5, "text": "Tetapkan SKP Tahunan, dengan akun kipApp atasan sendiri."},
-            {"n": 5, "x": 80.3, "y": 23.5, "text": "Kembalikan ke pegawai. SKP kembali ke Sedang dibuat."}
+            {"n": 1, "x": 30.3, "y": 22.0, "text": "Klik nama pegawai pada SKP triwulan untuk membuka bahan penilaian."},
+            {"n": 2, "x": 35.1, "y": 31.0, "text": "Tiap RK: jumlah kegiatan, yang selesai dan yang terkirim ke kipApp."},
+            {"n": 3, "x": 84.8, "y": 28.0, "text": "Capaian dibanding target, dengan satuan."},
+            {"n": 4, "x": 35.3, "y": 33.3, "text": "Catatan capaian yang ditulis pegawai."},
+            {"n": 5, "x": 79.2, "y": 22.2, "text": "Menilai masih di kipApp. Halaman Nilai di Kinetik sudah ada tetapi belum dinyalakan."}
+        ]
+    },
+    "skp-nilai": {
+        "src": "/shots/skp-nilai.png",
+        "url": "kinetik.bpssulteng.id (contoh data, belum dinyalakan)",
+        "steps": [
+            {"n": 1, "x": 43.8, "y": 20.7, "text": "Bahan penilaian dari Kinetik ada di halaman yang sama dengan form nilai."},
+            {"n": 2, "x": 81.4, "y": 54.4, "text": "Nilai 0 sampai 100 untuk tiap RK."},
+            {"n": 3, "x": 80.9, "y": 58.2, "text": "Tingkat muncul sendiri: 99 ke atas di atas ekspektasi, 80 sampai 98 sesuai, di bawah 80 di bawah ekspektasi."},
+            {"n": 4, "x": 54.1, "y": 59.1, "text": "Umpan balik, boleh dikosongkan."},
+            {"n": 5, "x": 81.4, "y": 61.9, "text": "Simpan: nilai langsung masuk ke kipApp dengan akun atasan."},
+            {"n": 6, "x": 36.6, "y": 98.3, "text": "Tujuh perilaku BerAKHLAK dinilai dengan cara yang sama, lalu Selesai menilai."}
         ]
     },
     "skp-pj": {

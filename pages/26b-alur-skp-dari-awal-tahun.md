@@ -12,6 +12,6 @@ Ini seluruh perjalanan SKP, dari awal tahun sampai angka kredit. Abu-abu artinya
 [click] Keempat, setelah SKP Tahunan ditetapkan, anggota membuat SKP triwulan dan memilih RK-nya. Kalau lupa, Kinetik membuatnya sendiri saat mengirim kegiatan.
 [click] Kelima, kegiatan. Rencana mingguan dikirim ke kipApp, ditandai selesai, lalu dikirim ke atasan. Ini sudah diuji langsung.
 [click] Keenam, SKP triwulan dikirim untuk dinilai dari SKP Saya, dan masih bisa dibatalkan sebelum dinilai. Ini juga sudah diuji langsung.
-[click] Ketujuh, atasan menilai tiap RK dan perilaku di kipApp. Penilaian tetap di kipApp karena butuh nilai tiap RK.
+[click] Ketujuh, atasan menilai tiap RK dan perilaku di kipApp. Penilaian saat ini di kipApp. Halaman Nilai di Kinetik sudah dibuat dan menunggu dinyalakan bersama atasan.
 [click] Kedelapan, setelah SKP berstatus Dinilai, Kinetik menghitung angka kredit sebagai estimasi dari predikatnya.
 -->
