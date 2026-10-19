@@ -97,6 +97,10 @@ src: ./pages/17b-anggota-buat-skp-triwulan.md
 ---
 
 ---
+src: ./pages/17d-anggota-tambah-iki.md
+---
+
+---
 src: ./pages/17c-anggota-kirim-skp.md
 ---
 

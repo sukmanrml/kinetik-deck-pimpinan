@@ -584,6 +584,16 @@ export const shots: Record<string, ShotDef> = {
             {"n": 3, "x": 88.6, "y": 29.3, "text": "Satu tombol menyalakan atau mematikan, berlaku segera untuk semua pengguna."}
         ]
     },
+    "skp-iki": {
+        "src": "/shots/skp-iki.png",
+        "url": "kinetik.bpssulteng.id (contoh data, belum dinyalakan)",
+        "steps": [
+            {"n": 1, "x": 34.8, "y": 45.8, "text": "Tiap RK menampilkan IKI-nya. RK tanpa IKI menahan pengiriman SKP."},
+            {"n": 2, "x": 58, "y": 71.8, "text": "IKI ditulis dengan targetnya dalam satu kalimat, minimal 10 huruf."},
+            {"n": 3, "x": 34.7, "y": 80.7, "text": "Simpan IKI: dibuat di kipApp dengan akun anggota."},
+            {"n": 4, "x": 41.8, "y": 87.3, "text": "Setelah semua RK punya IKI, SKP bisa dikirim untuk dinilai."}
+        ]
+    },
     "skp-pj": {
         "src": "/shots/skp-pj.png",
         "url": "kinetik.bpssulteng.id (contoh data)",
