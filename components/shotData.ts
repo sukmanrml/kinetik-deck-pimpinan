@@ -595,6 +595,16 @@ export const shots: Record<string, ShotDef> = {
             {"n": 4, "x": 41.8, "y": 87.3, "text": "Setelah semua RK punya IKI, SKP bisa dikirim untuk dinilai."}
         ]
     },
+    "panduan": {
+        "src": "/shots/panduan.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 90.6, "y": 3.4, "text": "Tombol Panduan halaman ada di pojok kanan atas, di halaman yang punya panduan."},
+            {"n": 2, "x": 19.7, "y": 13.3, "text": "Bagian yang dijelaskan disorot, sisanya digelapkan."},
+            {"n": 3, "x": 26.9, "y": 27.8, "text": "Kotak penjelasan singkat untuk bagian itu."},
+            {"n": 4, "x": 34.1, "y": 35.2, "text": "Lanjut ke bagian berikutnya. Esc menutup panduan."}
+        ]
+    },
     "skp-pj": {
         "src": "/shots/skp-pj.png",
         "url": "kinetik.bpssulteng.id (contoh data)",

@@ -161,6 +161,10 @@ src: ./pages/27b-notifikasi-di-aplikasi.md
 ---
 
 ---
+src: ./pages/27f-panduan-di-aplikasi.md
+---
+
+---
 src: ./pages/28-yang-sudah-dikerjakan-kipapp.md
 ---
 
