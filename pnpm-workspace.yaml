@@ -1,3 +1,6 @@
 shamefullyHoist: true
 overrides:
   markdown-it: ^14.0.0
+  dompurify: '>=3.4.16'
+  image-size: '>=2.0.3'
+  katex: '>=0.18.2'
