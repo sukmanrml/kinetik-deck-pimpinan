@@ -14,6 +14,8 @@ import { shots } from './shotData';
 
 const props = defineProps<{ id: string; clicks: number }>();
 const shot = computed(() => shots[props.id]);
+// Path gambar di shotData dimulai dengan "/". Tambahkan base agar tetap jalan di sub-path (GitHub Pages).
+const src = computed(() => import.meta.env.BASE_URL + shot.value.src.replace(/^\//, ''));
 
 // Saat sebuah nomor muncul, screenshot diperbesar ke titik itu beberapa detik, lalu kembali normal.
 const ZOOM = 2.2;
@@ -50,7 +52,7 @@ const zoomStyle = computed(() => {
             <div class="bar"><i></i><i></i><i></i><span>{{ shot.url ?? 'kinetik.bpssulteng.id' }}</span></div>
             <div class="img">
                 <div class="zoomer" :style="zoomStyle">
-                    <img :src="shot.src" alt="" />
+                    <img :src="src" alt="" />
                     <span v-for="s in shot.steps" :key="s.n" class="pin" :class="{ on: clicks >= s.n, now: clicks === s.n }" :style="{ left: s.x + '%', top: s.y + '%' }">{{ s.n }}</span>
                 </div>
             </div>
