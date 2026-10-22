@@ -4,3 +4,6 @@ overrides:
   dompurify: '>=3.4.16'
   image-size: '>=2.0.3'
   katex: '>=0.18.2'
+allowBuilds:
+  # Hanya dipakai untuk ekspor PDF/PNG lokal; browser dipasang lewat "pnpm exec playwright install chromium".
+  playwright-chromium: false
