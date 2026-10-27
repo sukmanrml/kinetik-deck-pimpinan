@@ -147,33 +147,14 @@ export const shots: Record<string, ShotDef> = {
             {"n": 4, "x": 93, "y": 33.2, "text": "Rapat bulanan tiap tim."}
         ]
     },
-    "head-overview": {
-        "src": "/shots/head-overview.png",
+    "head-beranda": {
+        "src": "/shots/head-beranda.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
-            {
-                "n": 1,
-                "x": 18.6,
-                "y": 21,
-                "text": "Kegiatan belum punya target. Contohnya 6 kegiatan bulan ini."
-            },
-            {
-                "n": 2,
-                "x": 45.8,
-                "y": 21,
-                "text": "Kegiatan selesai tanpa capaian. 645 dalam 60 hari terakhir."
-            },
-            {
-                "n": 3,
-                "x": 91,
-                "y": 21,
-                "text": "Belum ada rencana minggu ini. 86 orang."
-            },
-            {
-                "n": 4,
-                "x": 45.8,
-                "y": 60.3,
-                "text": "Kenaikan pangkat atau jenjang: siapa yang siap atau hampir."
-            }
+            {"n": 1, "x": 36, "y": 16.5, "text": "Rencana minggu ini: berapa anggota sudah membuat rencana, dan siapa yang belum."},
+            {"n": 2, "x": 96, "y": 16.5, "text": "Kegiatan ke atasan: siapa yang belum mengirim."},
+            {"n": 3, "x": 36, "y": 41, "text": "Tim yang belum punya rekap rapat mingguan minggu lalu."},
+            {"n": 4, "x": 96, "y": 41, "text": "SKP yang menunggu persetujuan pimpinan."}
         ]
     },
     "head-credit": {

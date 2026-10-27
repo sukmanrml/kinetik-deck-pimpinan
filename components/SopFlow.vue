@@ -38,7 +38,7 @@ const lanes: Lane[] = [
             { label: 'Menunggu staf menyusun bahan', to: 'Membuka Perlu perhatian dan rekap', kind: 'changed' },
             { label: 'Bertanya siapa yang belum mengisi', kind: 'cut' },
             { label: 'Membuka lembar Excel tiap tim', to: 'Membaca rekap tim di layar', kind: 'changed' },
-            { label: 'Meminta PJ memeriksa lewat pesan', to: 'Menulis Catatan Pimpinan', kind: 'changed' },
+            { label: 'Meminta PJ memeriksa lewat pesan', to: 'PJ memeriksa sendiri di Review Bersama', kind: 'changed' },
             { label: 'Menunggu bahan FRA disusun', kind: 'cut' },
         ],
         added: [],

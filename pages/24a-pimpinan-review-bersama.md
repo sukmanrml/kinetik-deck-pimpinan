@@ -9,5 +9,5 @@ Review Bersama sudah disederhanakan: lebih sedikit tulisan, ringkasan dalam satu
 [click] Pilih mingguan, bulanan, atau triwulanan, lalu pindah periode dengan panah.
 [click] Ringkasan kantor: tim yang punya rekap, rata-rata capaian, rekap yang dikunci PJ, dan baris yang dikonfirmasi.
 [click] Klik judul kolom Capaian untuk mengurutkan: tertinggi dulu, terendah dulu, atau urutan awal. Tim tanpa data selalu di bawah.
-[click] Status capaian tiap tim, dan gembok bila PJ sudah mengunci rekapnya. Catatan Pimpinan sudah dihapus dari halaman ini.
+[click] Status capaian tiap tim, dan gembok bila PJ sudah mengunci rekapnya.
 -->

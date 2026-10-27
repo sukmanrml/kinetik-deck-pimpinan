@@ -113,7 +113,7 @@ src: ./pages/23-pimpinan-1-4-kepatuhan-rencana.md
 ---
 
 ---
-src: ./pages/24-pimpinan-2-4-perlu-perhatian.md
+src: ./pages/24-pimpinan-2-4-beranda.md
 ---
 
 ---

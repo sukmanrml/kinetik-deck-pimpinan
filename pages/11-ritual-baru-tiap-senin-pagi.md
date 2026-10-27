@@ -9,6 +9,6 @@ Ini alur baru yang kami minta dari setiap tim. Setiap Senin pagi, ada satu ritua
 [click] Pertama, Senin pagi, evaluasi minggu lalu. Anggota mengisi capaian dan bukti. PJ menulis parafrase per RK, lalu mengunci rekap.
 [click] Kedua, masih Senin pagi, sebelum pukul sembilan: setiap anggota mengisi rencana kegiatan minggu ini di Rekap Mingguan.
 [click] Ketiga, Selasa sampai Minggu, anggota bekerja dan mencatat sekali, di kipApp atau Kinetik. Auto sync, tidak ada copy-paste.
-[click] Keempat, setelah pukul sembilan, pimpinan membuka Kepatuhan Rencana dan panel Perlu perhatian, untuk melihat siapa yang belum punya rencana.
+[click] Keempat, setelah pukul sembilan, pimpinan membuka Kepatuhan Rencana dan Beranda, untuk melihat siapa yang belum punya rencana.
 [click] Lalu Senin berikutnya, siklusnya mulai lagi dari evaluasi minggu yang baru selesai. Slide-slide berikut adalah walkthrough tampilannya.
 -->
