@@ -127,6 +127,15 @@ export const shots: Record<string, ShotDef> = {
             {"n": 3, "x": 25.2, "y": 57.8, "text": "Tabel lengkap per tim dan minggu tersembunyi sampai tombol ini ditekan."}
         ]
     },
+    "fra-bulanan": {
+        "src": "/shots/fra-bulanan.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 69, "y": 15, "text": "Pilih tampilan Data bulanan."},
+            {"n": 2, "x": 45, "y": 51, "text": "X dan Y tiap bulan, diisi PJ tim pemilik."},
+            {"n": 3, "x": 52, "y": 60, "text": "Persen otomatis: hijau tercapai, kuning belum, merah kosong."}
+        ]
+    },
     "review-bersama": {
         "src": "/shots/review-bersama.png",
         "url": "kinetik.bpssulteng.id (contoh data)",
