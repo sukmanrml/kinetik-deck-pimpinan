@@ -117,6 +117,14 @@ src: ./pages/24-pimpinan-2-4-perlu-perhatian.md
 ---
 
 ---
+src: ./pages/24a-pimpinan-review-bersama.md
+---
+
+---
+src: ./pages/24b-pimpinan-ringkasan-rapat.md
+---
+
+---
 src: ./pages/25-pimpinan-3-4-angka-kredit-tim.md
 ---
 

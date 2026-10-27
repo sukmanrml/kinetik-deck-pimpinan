@@ -1,4 +1,4 @@
-# Pimpinan (4/4): Kertas Kerja FRA
+# Pimpinan: Kertas Kerja FRA
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 

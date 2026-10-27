@@ -120,31 +120,31 @@ export const shots: Record<string, ShotDef> = {
     },
     "head-compliance": {
         "src": "/shots/head-compliance.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
-            {
-                "n": 1,
-                "x": 16,
-                "y": 16.2,
-                "text": "Batas pengisian rencana: Senin pukul 09.00."
-            },
-            {
-                "n": 2,
-                "x": 17.2,
-                "y": 25,
-                "text": "Minggu ini: berapa persen anggota yang sudah membuat rencana."
-            },
-            {
-                "n": 3,
-                "x": 58,
-                "y": 25,
-                "text": "Triwulan ini: berapa persen rencana minggu lalu yang berakhir selesai."
-            },
-            {
-                "n": 4,
-                "x": 68.5,
-                "y": 52.5,
-                "text": "Tiap tim, tiap minggu. Merah artinya belum ada rencana."
-            }
+            {"n": 1, "x": 30.6, "y": 19.4, "text": "Ringkasan dulu: rencana minggu ini, rencana triwulan, dan jumlah yang belum punya rencana."},
+            {"n": 2, "x": 25, "y": 29.2, "text": "Nama anggota yang belum membuat rencana, per tim."},
+            {"n": 3, "x": 25.2, "y": 57.8, "text": "Tabel lengkap per tim dan minggu tersembunyi sampai tombol ini ditekan."}
+        ]
+    },
+    "review-bersama": {
+        "src": "/shots/review-bersama.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 26.6, "y": 17.9, "text": "Mingguan, bulanan, atau triwulanan, dengan panah untuk pindah periode."},
+            {"n": 2, "x": 18.8, "y": 27.8, "text": "Ringkasan kantor dalam satu deret angka."},
+            {"n": 3, "x": 43.4, "y": 41.4, "text": "Klik Capaian untuk mengurutkan dari tertinggi atau terendah."},
+            {"n": 4, "x": 85.5, "y": 46.4, "text": "Status capaian. Gembok berarti rekap sudah dikunci PJ."}
+        ]
+    },
+    "ringkasan-rapat": {
+        "src": "/shots/ringkasan-rapat.png",
+        "url": "kinetik.bpssulteng.id (contoh data)",
+        "steps": [
+            {"n": 1, "x": 31.3, "y": 21.1, "text": "Rekap mingguan terkunci, rekap bulanan terkunci, dan tim yang punya bukti rapat."},
+            {"n": 2, "x": 51.9, "y": 33.1, "text": "Terkunci: PJ sudah menyelesaikan rekap. Angka kecil adalah jumlah bukti rapat."},
+            {"n": 3, "x": 62.1, "y": 33.2, "text": "Ditulis: ada parafrase tetapi belum dikunci."},
+            {"n": 4, "x": 93, "y": 33.2, "text": "Rapat bulanan tiap tim."}
         ]
     },
     "head-overview": {

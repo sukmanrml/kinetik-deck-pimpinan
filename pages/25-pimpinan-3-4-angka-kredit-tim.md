@@ -1,4 +1,4 @@
-# Pimpinan (3/4): Angka Kredit Tim
+# Pimpinan: Angka Kredit Tim
 
 <span v-click="1"></span><span v-click="2"></span><span v-click="3"></span><span v-click="4"></span>
 
