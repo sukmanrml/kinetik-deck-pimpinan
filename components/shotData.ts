@@ -151,7 +151,7 @@ export const shots: Record<string, ShotDef> = {
         "src": "/shots/head-beranda.png",
         "url": "kinetik.bpssulteng.id (contoh data)",
         "steps": [
-            {"n": 1, "x": 36, "y": 16.5, "text": "Rencana minggu ini: berapa anggota sudah membuat rencana, dan siapa yang belum."},
+            {"n": 1, "x": 51, "y": 22, "text": "Rencana minggu ini: berapa anggota sudah membuat rencana, dan siapa yang belum."},
             {"n": 2, "x": 96, "y": 16.5, "text": "Kegiatan ke atasan: siapa yang belum mengirim."},
             {"n": 3, "x": 36, "y": 41, "text": "Tim yang belum punya rekap rapat mingguan minggu lalu."},
             {"n": 4, "x": 96, "y": 41, "text": "SKP yang menunggu persetujuan pimpinan."}
