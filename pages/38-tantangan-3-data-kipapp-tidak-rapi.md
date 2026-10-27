@@ -11,7 +11,7 @@
 <div class="grid3 compact">
 <div v-click class="card ok"><b>Diuji dulu, atau dimatikan</b><br><span class="small">Kirim, batal kirim, hapus, dan kirim SKP sudah diuji pada SKP sendiri. Yang belum diuji punya saklar di menu Fitur, bisa dimatikan admin.</span></div>
 <div v-click class="card ok"><b>Hak akses per peran</b><br><span class="small">Anggota, PJ, pimpinan, dan admin melihat hal yang berbeda.</span></div>
-<div v-click class="card ok"><b>Mode lihat saja</b><br><span class="small">Pratinjau hanya baca, tanpa bisa mengubah.</span></div>
+<div v-click class="card ok"><b>Semua tercatat</b><br><span class="small">Admin bisa bertindak sebagai pengguna lain, tetapi setiap perubahan dicatat dengan namanya.</span></div>
 </div>
 
 <!--
@@ -21,5 +21,5 @@ Dua tantangan lagi. Pertama, data dari kipApp tidak selalu rapi: link bukti ada 
 Kedua, karena kipApp adalah catatan resmi, kami berhati-hati.
 [click] Setiap fitur yang menulis ke kipApp kami uji dulu pada kegiatan sementara di SKP kami sendiri, lalu dihapus lagi. Kirim ke atasan, batal kirim, hapus, dan kirim SKP triwulan sudah lolos dan aktif. Fitur yang belum pernah kami jalankan langsung, seperti penilaian SKP oleh atasan, pembuatan RK dan proyek di kipApp, dan penambahan IKI, punya saklar di menu Fitur, jadi admin bisa mematikannya kapan saja.
 [click] Hak akses berbeda untuk anggota, PJ, pimpinan, dan admin.
-[click] Ada mode lihat saja, untuk membantu pengguna tanpa risiko mengubah data.
+[click] Admin bisa bertindak sebagai pengguna lain untuk membantu, misalnya mengisi atau memperbaiki atas nama pegawai. Setiap perubahan dicatat dengan nama admin dan akun yang dipakai, dan kata sandi, profil, serta login kipApp tidak bisa diubah dari sana.
 -->
