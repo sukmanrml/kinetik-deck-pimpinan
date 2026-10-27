@@ -43,6 +43,8 @@ src: ./pages/10-berapa-langkah-yang-dipangkas.md
 ---
 src: ./pages/11-ritual-baru-tiap-senin-pagi.md
 ---
+src: ./pages/11a-anggota-beranda.md
+---
 
 ---
 src: ./pages/12-anggota-1-6-pilih-bulan.md
