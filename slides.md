@@ -217,6 +217,10 @@ src: ./pages/38-tantangan-3-data-kipapp-tidak-rapi.md
 ---
 
 ---
+src: ./pages/38a-tantangan-peta-data-kipapp.md
+---
+
+---
 src: ./pages/40-status-saat-ini.md
 ---
 

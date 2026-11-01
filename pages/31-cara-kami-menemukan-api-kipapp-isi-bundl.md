@@ -8,7 +8,7 @@
 
 <!--
 Dari file-file tadi, kami lanjut ke isinya. Di kiri, file yang di-download dan bundle-nya, di tengah isi bundle.
-[click] Bundle itu sudah dikompilasi, jadi sulit dibaca. Tapi kami bisa decompile dengan bantuan AI, dan hasilnya kode yang bisa dibaca lagi.
+[click] Bundle itu sudah dikompilasi, jadi sulit dibaca. Tapi kami bisa decompile-nya, dan hasilnya kode yang bisa dibaca lagi.
 [click] Dari kode itu kami mendapat daftar endpoint untuk kirim dan baca data. Totalnya ada seratus tujuh puluh satu endpoint.
 [click] Jadi walaupun tidak ada dokumentasi resmi, kami tahu persis endpoint yang dipakai kipApp sendiri. Endpoint yang menulis data baru kami pakai setelah dicoba di SKP kami sendiri.
 -->
