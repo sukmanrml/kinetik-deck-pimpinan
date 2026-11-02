@@ -238,6 +238,10 @@ src: ./pages/a6-arsitektur-target.md
 ---
 
 ---
+src: ./pages/a8-jalan-masuk-ekinerja.md
+---
+
+---
 src: ./pages/40-status-saat-ini.md
 ---
 
