@@ -221,6 +221,10 @@ src: ./pages/38a-tantangan-peta-data-kipapp.md
 ---
 
 ---
+src: ./pages/38b-tantangan-id-rk-projek.md
+---
+
+---
 src: ./pages/40-status-saat-ini.md
 ---
 
