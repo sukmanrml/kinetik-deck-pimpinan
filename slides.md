@@ -177,6 +177,11 @@ src: ./pages/27g-impor-kegiatan.md
 ---
 
 ---
+src: ./pages/b1-integritas-laporan-arsip.md
+---
+
+
+---
 src: ./pages/28-yang-sudah-dikerjakan-kipapp.md
 ---
 
@@ -225,11 +230,23 @@ src: ./pages/38b-tantangan-id-rk-projek.md
 ---
 
 ---
+src: ./pages/a1-konteks-sistem.md
+---
+
+---
+src: ./pages/a6-arsitektur-target.md
+---
+
+---
 src: ./pages/40-status-saat-ini.md
 ---
 
 ---
 src: ./pages/41-langkah-berikutnya-rencana.md
+---
+
+---
+src: ./pages/a7-rencana-aksi.md
 ---
 
 ---
