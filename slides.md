@@ -242,6 +242,18 @@ src: ./pages/a8-jalan-masuk-ekinerja.md
 ---
 
 ---
+src: ./pages/c1-hierarki-kipapp-ekinerja.md
+---
+
+---
+src: ./pages/c2-kegiatan-dipetakan.md
+---
+
+---
+src: ./pages/c3-iku-iki-padanan.md
+---
+
+---
 src: ./pages/40-status-saat-ini.md
 ---
 
