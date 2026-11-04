@@ -1,0 +1,1 @@
+var e=`/kinetik-deck-pimpinan/bps-logo.svg`;export{e as t};
