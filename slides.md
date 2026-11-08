@@ -43,6 +43,8 @@ src: ./pages/10-berapa-langkah-yang-dipangkas.md
 ---
 src: ./pages/11-ritual-baru-tiap-senin-pagi.md
 ---
+
+---
 src: ./pages/11a-anggota-beranda.md
 ---
 
@@ -176,6 +178,8 @@ src: ./pages/27b-notifikasi-di-aplikasi.md
 
 ---
 src: ./pages/27f-panduan-di-aplikasi.md
+---
+
 ---
 src: ./pages/27g-impor-kegiatan.md
 ---
