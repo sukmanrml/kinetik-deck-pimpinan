@@ -6,6 +6,13 @@ colorSchema: light
 duration: 20min
 timer: stopwatch
 aspectRatio: 16/9
+seoMeta:
+  ogTitle: "Kinetik (Kinerja Statistik Terintegrasi)"
+  ogDescription: "Paparan untuk Kepala BPS Provinsi Sulawesi Tengah: satu tempat untuk mencatat dan memantau kinerja tim setiap minggu."
+  ogImage: https://sukmanrml.github.io/kinetik-deck-pimpinan/og-image.png
+  ogUrl: https://sukmanrml.github.io/kinetik-deck-pimpinan/
+  twitterCard: summary_large_image
+  twitterImage: https://sukmanrml.github.io/kinetik-deck-pimpinan/og-image.png
 transition: fade
 author: Sukma Nirmala Dewi, S.Tr.Stat.
 fonts:
